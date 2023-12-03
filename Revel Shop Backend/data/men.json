@@ -49,7 +49,10 @@
     "slug": "man-on-edge",
     "price": 130.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/man-on-edge.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/man-on-edge2.jpg?raw=true"
+    ]
   },
   {
     "id": 6,
@@ -57,7 +60,10 @@
     "slug": "urban-for-men",
     "price": 130.0,
     "rating": 4.5,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-for-men.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-for-men-2.jpg?raw=true"
+    ]
   },
   {
     "id": 7,
@@ -65,7 +71,10 @@
     "slug": "outdoor-air",
     "price": 100.0,
     "rating": 4.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/ourtdoor-air.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/outdoor-air2.jpg?raw=true"
+    ]
   },
   {
     "id": 8,
@@ -73,7 +82,10 @@
     "slug": "stylo-gents",
     "price": 120.0,
     "rating": 4.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/stylo-gents.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/stylo-gents2.jpg?raw=true"
+    ]
   },
   {
     "id": 9,
@@ -81,7 +93,10 @@
     "slug": "entrepreneurs-style",
     "price": 135.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/entrepeneurs-style.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/entrepeneurs-style2.jpg?raw=true"
+    ]
   },
   {
     "id": 10,
@@ -89,6 +104,89 @@
     "slug": "brown-ways",
     "price": 140.0,
     "rating": 4.0,
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/brown-ways.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/brown-ways2.jpg?raw=true"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Ceunty '21",
+    "slug": "ceuntry-21",
+    "price": 150.0,
+    "rating": 4.2,
+    "image": ["", ""]
+  },
+  {
+    "id": 12,
+    "name": "Winter 'f",
+    "slug": "winter-f",
+    "price": 130.0,
+    "rating": 3.0,
+    "image": ["", ""]
+  },
+  {
+    "id": 13,
+    "name": "Bussiness X Way",
+    "slug": "business-x-way",
+    "price": 129.0,
+    "rating": 4.3,
+    "image": ["", ""]
+  },
+  {
+    "id": 14,
+    "name": "Supra Black",
+    "slug": "supra-black",
+    "price": 135.0,
+    "rating": 3.8,
+    "image": ["", ""]
+  },
+  {
+    "id": 15,
+    "name": "Numeris Saro",
+    "slug": "numeris-saro",
+    "price": 110.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 16,
+    "name": "Kage No Juju",
+    "slug": "kage-no-juj",
+    "price": 90.0,
+    "rating": 2.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 17,
+    "name": "Urbon Sudo",
+    "slug": "urbon-sudo",
+    "price": 130.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 18,
+    "name": "Tokyo Merch",
+    "slug": "tokyo-merch",
+    "price": 160.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 19,
+    "name": "",
+    "slug": "",
+    "price": 150.0,
+    "rating": 4.5,
+    "image": ["", ""]
+  },
+  {
+    "id": 20,
+    "name": "Miro Fetch",
+    "slug": "miro-fetch",
+    "price": 115.0,
+    "rating": 3.4,
     "image": ["", ""]
   }
 ]

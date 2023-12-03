@@ -14,7 +14,7 @@
     "id": 2,
     "name": "Air Force 1 X",
     "slug": "air-force-1-x",
-    "price": 90,
+    "price": 90.0,
     "rating": 3.8,
     "image": [
       "https://github.com/razarevel/Revel-Shop/blob/main/images/air-force.jpg?raw=true",
@@ -25,12 +25,70 @@
     "id": 3,
     "name": "Love Nana '20",
     "slug": "love-nana-20",
-    "price": 150,
+    "price": 150.0,
     "rating": 4.0,
     "image": [
       "https://github.com/razarevel/Revel-Shop/blob/main/images/air-force2.jpg?raw=true",
       "https://github.com/razarevel/Revel-Shop/blob/main/images/love-nana2.jpg?raw=true"
     ]
+  },
+  {
+    "id": 4,
+    "name": "Atom X",
+    "slug": "atom-x",
+    "price": 122.0,
+    "rating": 3.9,
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/atom--x.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/atom--x2.jpg?raw=true"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Man on Edge",
+    "slug": "man-on-edge",
+    "price": 130.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 6,
+    "name": "Urban For Men",
+    "slug": "urban-for-men",
+    "price": 130.0,
+    "rating": 4.5,
+    "image": ["", ""]
+  },
+  {
+    "id": 7,
+    "name": "OutDoor Air",
+    "slug": "outdoor-air",
+    "price": 100.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 8,
+    "name": "Stylo Gents",
+    "slug": "stylo-gents",
+    "price": 120.0,
+    "rating": 4.7,
+    "image": ["", ""]
+  },
+  {
+    "id": 9,
+    "name": "Entrepreneurs Style",
+    "slug": "entrepreneurs-style",
+    "price": 135.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 10,
+    "name": "Brown Ways",
+    "slug": "brown-ways",
+    "price": 140.0,
+    "rating": 4.0,
+    "image": ["", ""]
   }
-  
 ]

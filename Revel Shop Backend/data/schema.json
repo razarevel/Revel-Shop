@@ -2,11 +2,12 @@
   {
     "men | kid | women | accessories": [
       {
+        "id": 0,
         "name": "",
         "slug": "",
         "price": 0,
         "rating": 0,
-        "image": []
+        "image": ["", ""]
       }
     ]
   }

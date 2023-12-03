@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Potrait Suno",
+    "slug": "potrait-suno",
+    "price": 120.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 2,
+    "name": "Stylo Young",
+    "slug": "stylo-young",
+    "price": 122.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 3,
+    "name": "Kai hato",
+    "slug": "kai-hato",
+    "price": 100.0,
+    "rating": 4.1,
+    "image": ["", ""]
+  },
+  {
+    "id": 4,
+    "name": "Air X Force",
+    "slug": "air-x-force",
+    "price": 140.0,
+    "rating": 4.3,
+    "image": ["", ""]
+  },
+  {
+    "id": 5,
+    "name": "Kawaii koto",
+    "slug": "kawaii-koto",
+    "price": 120.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 6,
+    "name": "Jeans For kids",
+    "slug": "jens-for-kids",
+    "price": 150.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 7,
+    "name": "Kuro nu ma",
+    "slug": "kuro-nu-ma",
+    "price": 140.0,
+    "rating": 4.4,
+    "image": ["", ""]
+  },
+  {
+    "id": 8,
+    "name": "Jeresy For Kids",
+    "slug": "jeresy-for-kids",
+    "price": 130.0,
+    "rating": 3.7,
+    "image": ["", ""]
+  },
+  {
+    "id": 9,
+    "name": "Kid X Exo",
+    "slug": "kid-x-exo",
+    "price": 100.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 10,
+    "name": "Kodo mo des",
+    "slug": "kodo-mo-des",
+    "price": 90.0,
+    "rating": 3.1,
+    "image": ["", ""]
+  },
+  {
+    "id": 11,
+    "name": "Winter For kids",
+    "slug": "winter-for-kids",
+    "price": 142.0,
+    "rating": 4.8,
+    "image": ["", ""]
+  },
+  {
+    "id": 12,
+    "name": "Genki ka ee",
+    "slug": "genki-ka-ee",
+    "price": 115.0,
+    "rating": 3.5,
+    "image": ["", ""]
+  },
+  {
+    "id": 13,
+    "name": "Ora Tu Sora",
+    "slug": "ora-tu-sora",
+    "price": 155.0,
+    "rating": 2.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 14,
+    "name": "Twin Style",
+    "slug": "twin-style",
+    "price": 140.0,
+    "rating": 4.8,
+    "image": ["", ""]
+  },
+  {
+    "id": 15,
+    "name": "Leather Clothes",
+    "slug": "leather-clothes",
+    "price": 135.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 16,
+    "name": "Fraco Tu Sai",
+    "slug": "fraco-tu-sai",
+    "price": 140.0,
+    "rating": 4.7,
+    "image": ["", ""]
+  },
+  {
+    "id": 17,
+    "name": "Exo X kids",
+    "slug": "exo-x-kids",
+    "price": 150.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 18,
+    "name": "Halle Tu kids",
+    "slug": "halle-tu-kids",
+    "price": 120.0,
+    "rating": 4.5,
+    "image": ["", ""]
+  },
+  {
+    "id": 19,
+    "name": "Caw X kids",
+    "slug": "caw-x-kids",
+    "price": 110.0,
+    "rating": 3.3,
+    "image": ["", ""]
+  },
+  {
+    "id": 20,
+    "name": "White For Kids",
+    "slug": "white-for-kids",
+    "price": 100.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  }
+]

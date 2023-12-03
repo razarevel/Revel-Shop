@@ -115,7 +115,10 @@
     "slug": "ceuntry-21",
     "price": 150.0,
     "rating": 4.2,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/ceuntry-21.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/ceuntry-21-2.jpg?raw=true"
+    ]
   },
   {
     "id": 12,
@@ -123,7 +126,10 @@
     "slug": "winter-f",
     "price": 130.0,
     "rating": 3.0,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/winter-f.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/winter-f2.jpg?raw=true"
+    ]
   },
   {
     "id": 13,
@@ -131,7 +137,10 @@
     "slug": "business-x-way",
     "price": 129.0,
     "rating": 4.3,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/Business-x-way.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/Business-x-way2.jpg?raw=true"
+    ]
   },
   {
     "id": 14,
@@ -139,7 +148,10 @@
     "slug": "supra-black",
     "price": 135.0,
     "rating": 3.8,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/supera-black.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/supera-black2.jpg?raw=true"
+    ]
   },
   {
     "id": 15,
@@ -147,7 +159,10 @@
     "slug": "numeris-saro",
     "price": 110.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/numeris-saro.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/numeris-saro2.jpg?raw=true"
+    ]
   },
   {
     "id": 16,
@@ -155,7 +170,10 @@
     "slug": "kage-no-juj",
     "price": 90.0,
     "rating": 2.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kage-no-juju.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kage-no-juju2.jpg?raw=true"
+    ]
   },
   {
     "id": 17,
@@ -163,7 +181,10 @@
     "slug": "urbon-sudo",
     "price": 130.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-subo.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-subo2.jpg?raw=true"
+    ]
   },
   {
     "id": 18,
@@ -171,15 +192,21 @@
     "slug": "tokyo-merch",
     "price": 160.0,
     "rating": 4.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/tokyo-merch.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/tokyo-merch2.jpg?raw=true"
+    ]
   },
   {
     "id": 19,
-    "name": "",
-    "slug": "",
+    "name": "Classic Spring",
+    "slug": "classic-spring",
     "price": 150.0,
     "rating": 4.5,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/classic-spring.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/classic-spring2.jpg?raw=true"
+    ]
   },
   {
     "id": 20,
@@ -187,6 +214,9 @@
     "slug": "miro-fetch",
     "price": 115.0,
     "rating": 3.4,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/miro-fetch.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/miro-fetch2.jpg?raw=true"
+    ]
   }
 ]

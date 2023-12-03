@@ -3,39 +3,51 @@
     "id": 1,
     "name": "Pure Glow Lips Stick",
     "slug": "pure-glow-lips-stick",
-    "price": 10.00,
+    "price": 10.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/pure-glow-lips-stick.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/pure-glow-lips-stick2.jpg?raw=true"
+    ]
   },
   {
     "id": 2,
     "name": "Moisturizer Lotion",
     "slug": "moisturizer-lotion",
-    "price": 12.00,
+    "price": 12.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/moisturizer-lotion.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/moisturizer-lotion2.jpg?raw=true"
+    ]
   },
   {
     "id": 3,
     "name": "Pink LipStick",
     "slug": "pink-lipstick",
-    "price": 9.00,
+    "price": 9.0,
     "rating": 4.0,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/pink-lipstick.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/pink-lipstick2.jpg?raw=true"
+    ]
   },
   {
     "id": 4,
     "name": "Cosmetics Brush Pack",
     "slug": "cosmetics-brush-pack",
-    "price": 11.00,
+    "price": 11.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/cosmetics-brush-pack.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/cosmetics-brush-pack2.jpg?raw=true"
+    ]
   },
   {
     "id": 5,
     "name": "Flatly Lip Gloss",
     "slug": "flatlay-lip-gloss",
-    "price": 20.00,
+    "price": 20.0,
     "rating": 2.9,
     "image": ["", ""]
   },
@@ -43,49 +55,67 @@
     "id": 6,
     "name": "Sakura purfium",
     "slug": "sakura-purfium",
-    "price": 12.00,
+    "price": 12.0,
     "rating": 3.3,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/flatlay-lip-gloss.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/flatlay-lip-gloss2.jpg?raw=true"
+    ]
   },
   {
     "id": 7,
     "name": "Stack of purfium",
     "slug": "stack-of-purfium",
-    "price": 8.00,
+    "price": 8.0,
     "rating": 3.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/stack-of-purfium.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/stack-of-purfium2.jpg?raw=true"
+    ]
   },
   {
     "id": 8,
     "name": "Stack Of Nail Polish",
     "slug": "stack-of-nail-polish",
-    "price": 14.00,
+    "price": 14.0,
     "rating": 4.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/stack-of-nail-polish.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/stack-of-nail-polish2.jpg?raw=true"
+    ]
   },
   {
     "id": 9,
     "name": "Colorful Palette",
     "slug": "colorful-palette",
-    "price": 15.00,
+    "price": 15.0,
     "rating": 3.2,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/colorful-palette.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/colorful-palette2.jpg?raw=true"
+    ]
   },
   {
     "id": 10,
     "name": "Bottle of Cream",
     "slug": "bottle-of-cream",
-    "price": 5.00,
+    "price": 5.0,
     "rating": 2.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/bottle-of-cream.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/bottle-of-cream2.jpg?raw=true"
+    ]
   },
   {
     "id": 11,
     "name": "Cosmetics Deivces",
     "slug": "cosmetics-devices",
-    "price": 7.00,
+    "price": 7.0,
     "rating": 3.4,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/cosmetics-devices.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/cosmetics-devices2.jpg?raw=true"
+    ]
   },
   {
     "id": 12,
@@ -93,7 +123,10 @@
     "slug": "fragance-perfum",
     "price": 8.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/fragance-perfum.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/fragance-perfum2.jpg?raw=true"
+    ]
   },
   {
     "id": 13,
@@ -101,7 +134,10 @@
     "slug": "molley-nail-polish",
     "price": 23.0,
     "rating": 4.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/molley-nail-polish.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/molley-nail-polish2.jpg?raw=true"
+    ]
   },
   {
     "id": 14,
@@ -109,7 +145,10 @@
     "slug": "make-up-kit",
     "price": 17.0,
     "rating": 4.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/make-up-kit.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/make-up-kit2.jpg?raw=true"
+    ]
   },
   {
     "id": 15,
@@ -117,7 +156,10 @@
     "slug": "creativity-cosmetics",
     "price": 14.0,
     "rating": 4.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/creativity-cosmetics.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/creativity-cosmetics2.jpg?raw=true"
+    ]
   },
   {
     "id": 16,
@@ -125,7 +167,10 @@
     "slug": "close-up-pack",
     "price": 13.0,
     "rating": 2.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/close-up-pack.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/close-up-pack2.jpg?raw=true"
+    ]
   },
   {
     "id": 17,
@@ -133,7 +178,10 @@
     "slug": "face-care-scrub",
     "price": 7.0,
     "rating": 3.8,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/face-care-scrub.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/face-care-scrub2.jpg?raw=true"
+    ]
   },
   {
     "id": 18,
@@ -141,7 +189,10 @@
     "slug": "conceptual-kit",
     "price": 9.0,
     "rating": 4.4,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/conceptual-kit.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/conceptual-kit2.jpg?raw=true"
+    ]
   },
   {
     "id": 19,
@@ -149,7 +200,10 @@
     "slug": "hair-dryer",
     "price": 14,
     "rating": 3.5,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/hair-dryer.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/hair-dryer2.jpg?raw=true"
+    ]
   },
   {
     "id": 20,
@@ -157,6 +211,9 @@
     "slug": "all-in-one",
     "price": 60,
     "rating": 4.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/all-in-one.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/accessories/all-in-one2.jpg?raw=true"
+    ]
   }
 ]

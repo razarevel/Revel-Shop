@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Hot Summer",
+    "slug": "hot-summer",
+    "price": 130.0,
+    "rating": 3.2,
+    "image": ["", ""]
+  },
+  {
+    "id": 2,
+    "name": "Black ORA",
+    "slug": "black-ora",
+    "price": 100.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 3,
+    "name": "Umi Suro",
+    "slug": "umi-suro",
+    "price": 160.0,
+    "rating": 4.0,
+    "image": ["", ""]
+  },
+  {
+    "id": 4,
+    "name": "Jery For Girls",
+    "slug": "jery-for-girls",
+    "price": 130.0,
+    "rating": 4.1,
+    "image": ["", ""]
+  },
+  {
+    "id": 5,
+    "name": "AW X Cru",
+    "slug": "aw-x-cru",
+    "price": 130.0,
+    "rating": 3.2,
+    "image": ["", ""]
+  },
+  {
+    "id": 6,
+    "name": "Kai To X",
+    "slug": "kai-to-x",
+    "price": 150.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 7,
+    "name": "Tokyo Merch",
+    "slug": "tokyo-merch",
+    "price": 160.0,
+    "rating": 3.5,
+    "image": ["", ""]
+  },
+  {
+    "id": 8,
+    "name": "Kawaii Chan to",
+    "slug": "kawaii-chan-to",
+    "price": 120.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 9,
+    "name": "Blue X Ray",
+    "slug": "blue-x-ray",
+    "price": 110.0,
+    "rating": 2.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 10,
+    "name": "Red X Rose",
+    "slug": "red-x-rose",
+    "price": 155.0,
+    "rating": 4.7,
+    "image": ["", ""]
+  },
+  {
+    "id": 11,
+    "name": "Saint tom rai",
+    "slug": "saint-tom-rai",
+    "price": 150.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 12,
+    "name": "Winter '21s",
+    "slug": "winter-21s",
+    "price": 140.0,
+    "rating": 3.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 13,
+    "name": "Outdoor for Girls",
+    "slug": "outdoor-for-girls",
+    "price": 123.0,
+    "rating": 2.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 14,
+    "name": "Summer Beach",
+    "slug": "summer-beach",
+    "price": 160.0,
+    "rating": 4.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 15,
+    "name": "Subara Kun to",
+    "slug": "subara-kun-to",
+    "price": 125.0,
+    "rating": 3.5,
+    "image": ["", ""]
+  },
+  {
+    "id": 16,
+    "name": "Jean X Stylo",
+    "slug": "jean-x-stylo",
+    "price": 140.0,
+    "rating": 4.4,
+    "image": ["", ""]
+  },
+  {
+    "id": 17,
+    "name": "Women Flora",
+    "slug": "women-flora",
+    "price": 150.0,
+    "rating": 4.6,
+    "image": ["", ""]
+  },
+  {
+    "id": 18,
+    "name": "Urban For Girls",
+    "slug": "urban-for-grils",
+    "price": 133.0,
+    "rating": 3.9,
+    "image": ["", ""]
+  },
+  {
+    "id": 19,
+    "name": "Ray X Row",
+    "slug": "ray-x-row",
+    "price": 120.0,
+    "rating": 4.3,
+    "image": ["", ""]
+  },
+  {
+    "id": 20,
+    "name": "Neon Way Style",
+    "slug": "neon-way-style",
+    "price": 130.0,
+    "rating": 4.6,
+    "image": ["", ""]
+  }
+]

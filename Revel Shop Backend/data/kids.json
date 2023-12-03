@@ -5,7 +5,10 @@
     "slug": "potrait-suno",
     "price": 120.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/potrait-suno.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/potrait-suno2.jpg?raw=true"
+    ]
   },
   {
     "id": 2,
@@ -13,7 +16,10 @@
     "slug": "stylo-young",
     "price": 122.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/stylo-young.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/stylo-young2.jpg?raw=true"
+    ]
   },
   {
     "id": 3,
@@ -21,7 +27,10 @@
     "slug": "kai-hato",
     "price": 100.0,
     "rating": 4.1,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kai-hato.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kai-hato2.jpg?raw=true"
+    ]
   },
   {
     "id": 4,
@@ -29,7 +38,10 @@
     "slug": "air-x-force",
     "price": 140.0,
     "rating": 4.3,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/air-x-force.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/air-x-force2.jpg?raw=true"
+    ]
   },
   {
     "id": 5,
@@ -37,7 +49,10 @@
     "slug": "kawaii-koto",
     "price": 120.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kawaii-koto.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kawaii-koto2.jpg?raw=true"
+    ]
   },
   {
     "id": 6,
@@ -45,7 +60,10 @@
     "slug": "jens-for-kids",
     "price": 150.0,
     "rating": 4.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/jens-for-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/jens-for-kids2.jpg?raw=true"
+    ]
   },
   {
     "id": 7,
@@ -53,7 +71,10 @@
     "slug": "kuro-nu-ma",
     "price": 140.0,
     "rating": 4.4,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kuro-nu-ma.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kuro-nu-ma2.jpg?raw=true"
+    ]
   },
   {
     "id": 8,
@@ -61,7 +82,10 @@
     "slug": "jeresy-for-kids",
     "price": 130.0,
     "rating": 3.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/jeresy-for-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/jeresy-for-kids2.jpg?raw=true"
+    ]
   },
   {
     "id": 9,
@@ -69,7 +93,10 @@
     "slug": "kid-x-exo",
     "price": 100.0,
     "rating": 3.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kid-x-exo.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kid-x-exo2.jpg?raw=true"
+    ]
   },
   {
     "id": 10,
@@ -77,7 +104,10 @@
     "slug": "kodo-mo-des",
     "price": 90.0,
     "rating": 3.1,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kodo-mo-des.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/kodo-mo-des2.jpg?raw=true"
+    ]
   },
   {
     "id": 11,
@@ -85,7 +115,10 @@
     "slug": "winter-for-kids",
     "price": 142.0,
     "rating": 4.8,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/winter-for-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/winter-for-kids2.jpg?raw=true"
+    ]
   },
   {
     "id": 12,
@@ -93,7 +126,10 @@
     "slug": "genki-ka-ee",
     "price": 115.0,
     "rating": 3.5,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/genki-ka-ee.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/genki-ka-ee2.jpg?raw=true"
+    ]
   },
   {
     "id": 13,
@@ -101,7 +137,10 @@
     "slug": "ora-tu-sora",
     "price": 155.0,
     "rating": 2.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/ora-tu-sora.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/ora-tu-sora2.jpg?raw=true"
+    ]
   },
   {
     "id": 14,
@@ -109,7 +148,10 @@
     "slug": "twin-style",
     "price": 140.0,
     "rating": 4.8,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/twin-style.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/twin-style2.jpg?raw=true"
+    ]
   },
   {
     "id": 15,
@@ -117,7 +159,10 @@
     "slug": "leather-clothes",
     "price": 135.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/leather-clothes.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/leather-clothes2.jpg?raw=true"
+    ]
   },
   {
     "id": 16,
@@ -125,7 +170,10 @@
     "slug": "fraco-tu-sai",
     "price": 140.0,
     "rating": 4.7,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/fraco-tu-sai.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/fraco-tu-sai2.jpg?raw=true"
+    ]
   },
   {
     "id": 17,
@@ -133,7 +181,10 @@
     "slug": "exo-x-kids",
     "price": 150.0,
     "rating": 4.9,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/exo-x-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/exo-x-kids2.jpg?raw=true"
+    ]
   },
   {
     "id": 18,
@@ -141,7 +192,10 @@
     "slug": "halle-tu-kids",
     "price": 120.0,
     "rating": 4.5,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/halle-tu-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/halle-tu-kids2.jpg?raw=true"
+    ]
   },
   {
     "id": 19,
@@ -149,7 +203,10 @@
     "slug": "caw-x-kids",
     "price": 110.0,
     "rating": 3.3,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/caw-x-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/caw-x-kids2.jpg?raw=true"
+    ]
   },
   {
     "id": 20,
@@ -157,6 +214,9 @@
     "slug": "white-for-kids",
     "price": 100.0,
     "rating": 3.6,
-    "image": ["", ""]
+    "image": [
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/white-for-kids.jpg?raw=true",
+      "https://github.com/razarevel/Revel-Shop/blob/main/images/kids/white-for-kids2.jpg?raw=true"
+    ]
   }
 ]

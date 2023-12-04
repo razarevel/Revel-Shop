@@ -4,13 +4,18 @@ const Kids = require("../model/KidsModel");
 const Accessories = require("../model/accessories");
 // men
 exports.getAllMen = async (req, res) => {
-  const men = await Men.find({});
-  res.status(200).json({
-    status: "success",
-    result: men.length,
-    data: { men },
-  });
   try {
+    let query = Men.find();
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      query = query.sort(sortBy);
+    }
+    const men = await query;
+    res.status(200).json({
+      status: "success",
+      result: men.length,
+      data: { men },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -36,13 +41,18 @@ exports.getMenById = async (req, res) => {
 };
 // women
 exports.getAllWomen = async (req, res) => {
-  const women = await Women.find({});
-  res.status(200).json({
-    status: "success",
-    result: women.length,
-    data: { women },
-  });
   try {
+    let query = Women.find();
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      query = query.sort(sortBy);
+    }
+    const women = await query;
+    res.status(200).json({
+      status: "success",
+      result: women.length,
+      data: { women },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -51,12 +61,12 @@ exports.getAllWomen = async (req, res) => {
   }
 };
 exports.getWomenById = async (req, res) => {
-  const women = await Women.findOne({ _id: req.params.id });
-  res.status(200).json({
-    status: "success",
-    data: { women },
-  });
   try {
+    const women = await Women.findOne({ _id: req.params.id });
+    res.status(200).json({
+      status: "success",
+      data: { women },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -66,13 +76,18 @@ exports.getWomenById = async (req, res) => {
 };
 // kids
 exports.getAllkids = async (req, res) => {
-  const kids = await Kids.find({});
-  res.status(200).json({
-    status: "success",
-    result: kids.length,
-    data: { kids },
-  });
   try {
+    let query = Kids.find();
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      query = query.sort(sortBy);
+    }
+    const kids = await query;
+    res.status(200).json({
+      status: "success",
+      result: kids.length,
+      data: { kids },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -81,12 +96,12 @@ exports.getAllkids = async (req, res) => {
   }
 };
 exports.getKidsById = async (req, res) => {
-  const kids = await Kids.findOne({ _id: req.params.id });
-  res.status(200).json({
-    status: "success",
-    data: { kids },
-  });
   try {
+    const kids = await Kids.findOne({ _id: req.params.id });
+    res.status(200).json({
+      status: "success",
+      data: { kids },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -96,13 +111,18 @@ exports.getKidsById = async (req, res) => {
 };
 // accessories
 exports.getAllAccessories = async (req, res) => {
-  const accessories = await Accessories.find({});
-  res.status(200).json({
-    status: "success",
-    result: accessories.length,
-    data: { accessories },
-  });
   try {
+    let query = Accessories.find();
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      query = query.sort(sortBy);
+    }
+    const accessories = await query;
+    res.status(200).json({
+      status: "success",
+      result: accessories.length,
+      data: { accessories },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -111,12 +131,12 @@ exports.getAllAccessories = async (req, res) => {
   }
 };
 exports.getAccessoriesById = async (req, res) => {
-  const accessories = await Accessories.findOne({ _id: req.params.id });
-  res.status(200).json({
-    status: "success",
-    data: { accessories },
-  });
   try {
+    const accessories = await Accessories.findOne({ _id: req.params.id });
+    res.status(200).json({
+      status: "success",
+      data: { accessories },
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",

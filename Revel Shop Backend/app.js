@@ -2,12 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const router = require("./routes/productRoute");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const app = express();
 
 dotenv.config({ path: "./config.env" });
 app.use(express.json());
+app.use(cors());
 app.use("/api", router);
-
 // connection to mongoose
 const DB = process.env.DATABASE.replace(
   "<password>",
@@ -15,8 +16,7 @@ const DB = process.env.DATABASE.replace(
 );
 mongoose
   .connect(DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    autoIndex: false,
   })
   .then(() => console.log("DB successfully Connected to Database"));
 

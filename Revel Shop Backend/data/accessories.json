@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Pure Glow Lips Stick",
     "slug": "pure-glow-lips-stick",
     "price": 10.0,
@@ -11,7 +10,6 @@
     ]
   },
   {
-    "id": 2,
     "name": "Moisturizer Lotion",
     "slug": "moisturizer-lotion",
     "price": 12.0,
@@ -22,7 +20,6 @@
     ]
   },
   {
-    "id": 3,
     "name": "Pink LipStick",
     "slug": "pink-lipstick",
     "price": 9.0,
@@ -33,7 +30,6 @@
     ]
   },
   {
-    "id": 4,
     "name": "Cosmetics Brush Pack",
     "slug": "cosmetics-brush-pack",
     "price": 11.0,
@@ -44,7 +40,6 @@
     ]
   },
   {
-    "id": 5,
     "name": "Flatly Lip Gloss",
     "slug": "flatlay-lip-gloss",
     "price": 20.0,
@@ -52,7 +47,6 @@
     "image": ["", ""]
   },
   {
-    "id": 6,
     "name": "Sakura purfium",
     "slug": "sakura-purfium",
     "price": 12.0,
@@ -63,7 +57,6 @@
     ]
   },
   {
-    "id": 7,
     "name": "Stack of purfium",
     "slug": "stack-of-purfium",
     "price": 8.0,
@@ -74,7 +67,6 @@
     ]
   },
   {
-    "id": 8,
     "name": "Stack Of Nail Polish",
     "slug": "stack-of-nail-polish",
     "price": 14.0,
@@ -85,7 +77,6 @@
     ]
   },
   {
-    "id": 9,
     "name": "Colorful Palette",
     "slug": "colorful-palette",
     "price": 15.0,
@@ -96,7 +87,6 @@
     ]
   },
   {
-    "id": 10,
     "name": "Bottle of Cream",
     "slug": "bottle-of-cream",
     "price": 5.0,
@@ -107,7 +97,6 @@
     ]
   },
   {
-    "id": 11,
     "name": "Cosmetics Deivces",
     "slug": "cosmetics-devices",
     "price": 7.0,
@@ -118,7 +107,6 @@
     ]
   },
   {
-    "id": 12,
     "name": "Fragance Perfum",
     "slug": "fragance-perfum",
     "price": 8.0,
@@ -129,7 +117,6 @@
     ]
   },
   {
-    "id": 13,
     "name": "Molley Nail Polish",
     "slug": "molley-nail-polish",
     "price": 23.0,
@@ -140,7 +127,6 @@
     ]
   },
   {
-    "id": 14,
     "name": "Make up kit",
     "slug": "make-up-kit",
     "price": 17.0,
@@ -151,7 +137,6 @@
     ]
   },
   {
-    "id": 15,
     "name": "Creativity Cosmetics",
     "slug": "creativity-cosmetics",
     "price": 14.0,
@@ -162,7 +147,6 @@
     ]
   },
   {
-    "id": 16,
     "name": "Close up Pack",
     "slug": "close-up-pack",
     "price": 13.0,
@@ -173,7 +157,6 @@
     ]
   },
   {
-    "id": 17,
     "name": "Face Care Scrub",
     "slug": "face-care-scrub",
     "price": 7.0,
@@ -184,7 +167,6 @@
     ]
   },
   {
-    "id": 18,
     "name": "Conceptual Kit",
     "slug": "conceptual-kit",
     "price": 9.0,
@@ -195,7 +177,6 @@
     ]
   },
   {
-    "id": 19,
     "name": "Hair Dryer",
     "slug": "hair-dryer",
     "price": 14,
@@ -206,7 +187,6 @@
     ]
   },
   {
-    "id": 20,
     "name": "All In One",
     "slug": "all-in-one",
     "price": 60,

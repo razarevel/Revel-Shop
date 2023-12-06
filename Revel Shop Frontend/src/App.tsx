@@ -1,10 +1,10 @@
-import { Swiper1f } from "./swiper";
+import SliderSection from "./components/Slider";
 
 function App() {
   return (
-    <div className="flex items-center justify-center">
-      <Swiper1f />
-    </div>
+    <>
+      <SliderSection />
+    </>
   );
 }
 export default App;

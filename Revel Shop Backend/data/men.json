@@ -1,82 +1,82 @@
 [
   {
-    "name":"Classic Spring",
+    "name": "Classic Spring",
     "slug": "classic-spring",
     "price": 120.0,
     "rating": 3.5,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/classic-spring.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/classic-spring2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/classic-spring.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/classic-spring2.jpg"
     ]
   },
   {
-    "name":"Air Force 1 x",
+    "name": "Air Force 1 x",
     "slug": "air-force-1-x",
     "price": 90.0,
     "rating": 3.8,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/air-force.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/air-force2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/air-force.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/air-force2.jpg"
     ]
   },
   {
-    "name":"Love Nana 20",
+    "name": "Love Nana 20",
     "slug": "love-nana-20",
     "price": 150.0,
     "rating": 4.0,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/air-force2.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/love-nana2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/love-nana.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/love-nana2.jpg"
     ]
   },
   {
-    "name":"Atom X",
+    "name": "Atom X",
     "slug": "atom-x",
     "price": 122.0,
     "rating": 3.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/atom--x.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/atom--x2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/atom--x.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/atom--x2.jpg"
     ]
   },
   {
-    "name":"Man On Edge",
+    "name": "Man On Edge",
     "slug": "man-on-edge",
     "price": 130.0,
     "rating": 3.6,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/man-on-edge.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/man-on-edge2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/man-on-edge.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/man-on-edge2.jpg"
     ]
   },
   {
-    "name":"Urban For Men",
+    "name": "Urban For Men",
     "slug": "urban-for-men",
     "price": 130.0,
     "rating": 4.5,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-for-men.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-for-men-2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/urban-for-men.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/urban-for-men-2.jpg"
     ]
   },
   {
-    "name":"Ourtdoor Air",
+    "name": "Ourtdoor Air",
     "slug": "outdoor-air",
     "price": 100.0,
     "rating": 4.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/ourtdoor-air.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/outdoor-air2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/ourtdoor-air.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/outdoor-air2.jpg"
     ]
   },
   {
-    "name":"Stylo Gents",
+    "name": "Stylo Gents",
     "slug": "stylo-gents",
     "price": 120.0,
     "rating": 4.7,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/stylo-gents.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/stylo-gents2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/stylo-gents.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/stylo-gents2.jpg"
     ]
   },
   {
@@ -85,8 +85,8 @@
     "price": 135.0,
     "rating": 3.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/entrepeneurs-style.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/entrepeneurs-style2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/entrepeneurs-style.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/entrepeneurs-style2.jpg"
     ]
   },
   {
@@ -95,8 +95,8 @@
     "price": 140.0,
     "rating": 4.0,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/brown-ways.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/brown-ways2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/brown-ways.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/Business-x-way2.jpg"
     ]
   },
   {
@@ -105,8 +105,8 @@
     "price": 150.0,
     "rating": 4.2,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/ceuntry-21.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/ceuntry-21-2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/ceuntry-21.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/ceuntry-21-2.jpg"
     ]
   },
   {
@@ -115,8 +115,8 @@
     "price": 130.0,
     "rating": 3.0,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/winter-f.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/winter-f2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/winter-f.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/winter-f2.jpg"
     ]
   },
   {
@@ -125,8 +125,8 @@
     "price": 129.0,
     "rating": 4.3,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/Business-x-way.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/Business-x-way2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/Business-x-way.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/Business-x-way2.jpg"
     ]
   },
   {
@@ -135,8 +135,8 @@
     "price": 135.0,
     "rating": 3.8,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/supera-black.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/supera-black2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/supera-black.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/supera-black2.jpg"
     ]
   },
   {
@@ -145,8 +145,8 @@
     "price": 110.0,
     "rating": 3.6,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/numeris-saro.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/numeris-saro2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/numeris-saro.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/numeris-saro2.jpg"
     ]
   },
   {
@@ -155,8 +155,8 @@
     "price": 90.0,
     "rating": 2.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/kage-no-juju.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/kage-no-juju2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/kage-no-juju.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/kage-no-juju2.jpg"
     ]
   },
   {
@@ -165,8 +165,8 @@
     "price": 130.0,
     "rating": 3.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-subo.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/urban-subo2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/urban-subo.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/urban-subo2.jpg"
     ]
   },
   {
@@ -175,8 +175,8 @@
     "price": 160.0,
     "rating": 4.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/tokyo-merch.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/tokyo-merch2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/tokyo-merch.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/tokyo-merch2.jpg"
     ]
   },
   {
@@ -185,8 +185,8 @@
     "price": 150.0,
     "rating": 4.5,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/classic-spring.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/classic-spring2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/classic-spring.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/classic-spring2.jpg"
     ]
   },
   {
@@ -195,8 +195,8 @@
     "price": 115.0,
     "rating": 3.4,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/miro-fetch.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/miro-fetch2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/miro-fetch.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/men/miro-fetch2.jpg"
     ]
   }
 ]

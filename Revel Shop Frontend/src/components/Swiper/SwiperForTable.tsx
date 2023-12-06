@@ -1,31 +1,33 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 
 import { Navigation } from "swiper/modules";
-import SlideNextButton from "./Swiperbutton";
-export function Swiper1f() {
+import { useRef, useState } from "react";
+export function SwiperForTable() {
+  const [swiper, setSwiper] = useState<Swiper | null>(null);
+  const navLeft = useRef<HTMLButtonElement | null>(null);
+  const navRight = useRef<HTMLButtonElement | null>(null);
+
   return (
-    <>
-      <div className="max-w-[1440px] w-full lg:px-[100px]  overflow-hidden relative mt-32 px-10 md:px-10">
+    <div className="relative mt-32 flex items-center justify-center px-10  space-x-4 container mx-auto">
+      <button
+        className="border border-spacing-x-1.5 border-black p-1"
+        ref={navLeft}
+        onClick={() => swiper.slidePrev()}
+      >
+        <MdChevronLeft size="32" />
+      </button>
+      <div className="w-[80%]  overflow-hidden">
         <Swiper
+          onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
           loop={true}
-          className="my-swiper"
           modules={[Navigation]}
-          navigation={true}
           spaceBetween={20}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 50,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
+          slidesPerView={2}
+          navigation={{
+            prevEl: navLeft.current,
+            nextEl: navRight.current,
           }}
         >
           <SwiperSlide className="bg-red-200 w-96 h-96 flex-shrink-0"></SwiperSlide>
@@ -39,9 +41,17 @@ export function Swiper1f() {
           <SwiperSlide className="bg-gray-200 w-96 h-96 flex-shrink-0"></SwiperSlide>
           <SwiperSlide className="bg-green-200 w-96 h-96 flex-shrink-0"></SwiperSlide>
           <SwiperSlide className="bg-yellow-200 w-96 h-96 flex-shrink-0"></SwiperSlide>
-          <SlideNextButton />
+          {/* <SlideNextButton /> */}
         </Swiper>
       </div>
-    </>
+
+      <button
+        className="border border-spacing-x-1.5 border-black p-1"
+        ref={navRight}
+        onClick={() => swiper.slideNext()}
+      >
+        <MdChevronRight size="32" />
+      </button>
+    </div>
   );
 }

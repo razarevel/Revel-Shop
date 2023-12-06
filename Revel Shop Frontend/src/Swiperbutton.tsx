@@ -19,7 +19,6 @@ export default function SlideNextButton() {
         </button>
       </div>
       <div
-        onClick={() => swiper.slideNext()}
         className="absolute z-50 top-0 right-[-26%] h-full w-[25%] bg-white items-center justify-start  flex 
          lg:right-[-30%] xl:right-[-28%]
         "

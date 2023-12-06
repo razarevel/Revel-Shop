@@ -10,6 +10,9 @@ exports.getAllMen = async (req, res) => {
       const sortBy = req.query.sort.split(",").join(" ");
       query = query.sort(sortBy);
     }
+    if (req.query.limit) {
+      query = query.limit(req.query.limit*1);
+    }
     const men = await query;
     res.status(200).json({
       status: "success",
@@ -47,6 +50,9 @@ exports.getAllWomen = async (req, res) => {
       const sortBy = req.query.sort.split(",").join(" ");
       query = query.sort(sortBy);
     }
+    if (req.query.limit) {
+      query = query.limit(req.query.limit);
+    }
     const women = await query;
     res.status(200).json({
       status: "success",
@@ -82,6 +88,9 @@ exports.getAllkids = async (req, res) => {
       const sortBy = req.query.sort.split(",").join(" ");
       query = query.sort(sortBy);
     }
+    if (req.query.limit) {
+      query = query.limit(req.query.limit);
+    }
     const kids = await query;
     res.status(200).json({
       status: "success",
@@ -116,6 +125,9 @@ exports.getAllAccessories = async (req, res) => {
     if (req.query.sort) {
       const sortBy = req.query.sort.split(",").join(" ");
       query = query.sort(sortBy);
+    }
+    if (req.query.limit) {
+      query = query.limit(req.query.limit);
     }
     const accessories = await query;
     res.status(200).json({

@@ -5,8 +5,8 @@
     "price": 130.0,
     "rating": 3.2,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/hot-summer.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/hot-summer2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/hot-summer.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/hot-summer2.jpg"
     ]
   },
   {
@@ -15,8 +15,8 @@
     "price": 100.0,
     "rating": 3.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/black-ora.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/black-ora2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/black-ora.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/black-ora2.jpg"
     ]
   },
   {
@@ -25,8 +25,8 @@
     "price": 160.0,
     "rating": 4.0,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/umi-suro.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/umi-suro2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/umi-suro.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/umi-suro2.jpg"
     ]
   },
   {
@@ -35,8 +35,8 @@
     "price": 130.0,
     "rating": 4.1,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/jery-for-girls.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/jery-for-girls2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/jery-for-girls.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/jery-for-girls2.jpg"
     ]
   },
   {
@@ -45,8 +45,8 @@
     "price": 130.0,
     "rating": 3.2,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/aw-x-cru.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/aw-x-cru2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/aw-x-cru.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/aw-x-cru2.jpg"
     ]
   },
   {
@@ -55,8 +55,8 @@
     "price": 150.0,
     "rating": 4.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/kai-to-x.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/saint-tom-rai2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/kai-to-x.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/jery-for-girls2.jpg"
     ]
   },
   {
@@ -65,8 +65,8 @@
     "price": 160.0,
     "rating": 3.5,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/tokyo-merch.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/tokyo-merch2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/tokyo-merch.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/tokyo-merch2.jpg"
     ]
   },
   {
@@ -75,8 +75,8 @@
     "price": 120.0,
     "rating": 3.6,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/kawaii-chan-to.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/kawaii-chan-to2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/kawaii-chan-to.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/kawaii-chan-to2.jpg"
     ]
   },
   {
@@ -85,8 +85,8 @@
     "price": 110.0,
     "rating": 2.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/blue-x-ray.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/blue-x-ray2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/blue-x-ray.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/blue-x-ray2.jpg"
     ]
   },
   {
@@ -95,8 +95,8 @@
     "price": 155.0,
     "rating": 4.7,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/red-x-rose.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/red-x-rose2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/red-x-rose.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/red-x-rose2.jpg"
     ]
   },
   {
@@ -105,8 +105,8 @@
     "price": 150.0,
     "rating": 4.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/saint-tom-rai.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/saint-tom-rai2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/saint-tom-rai.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/saint-tom-rai2.jpg"
     ]
   },
   {
@@ -115,8 +115,8 @@
     "price": 140.0,
     "rating": 3.6,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/winter-21s.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/winter-21s2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/winter-21s.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/winter-21s2.jpg"
     ]
   },
   {
@@ -125,8 +125,8 @@
     "price": 123.0,
     "rating": 2.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/outdoor-for-girls.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/outdoor-for-girls2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/outdoor-for-girls.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/outdoor-for-girls2.jpg"
     ]
   },
   {
@@ -135,8 +135,8 @@
     "price": 160.0,
     "rating": 4.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/summer-beach.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/summer-beach2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/summer-beach.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/summer-beach2.jpg"
     ]
   },
   {
@@ -145,8 +145,8 @@
     "price": 125.0,
     "rating": 3.5,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/subara-kun-to.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/subara-kun-to2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/subara-kun-to.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/subara-kun-to2.jpg"
     ]
   },
   {
@@ -155,8 +155,8 @@
     "price": 140.0,
     "rating": 4.4,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/jean-x-stylo.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/jean-x-stylo2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/jean-x-stylo.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/jean-x-stylo2.jpg"
     ]
   },
   {
@@ -165,8 +165,8 @@
     "price": 150.0,
     "rating": 4.6,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/women-flora.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/women-flora2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/women-flora.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/women-flora2.jpg"
     ]
   },
   {
@@ -175,8 +175,8 @@
     "price": 133.0,
     "rating": 3.9,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/urban-for-grils.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/urban-for-grils2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/urban-for-grils.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/urban-for-grils2.jpg"
     ]
   },
   {
@@ -185,8 +185,8 @@
     "price": 120.0,
     "rating": 4.3,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/ray-x-row.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/ray-x-row2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/ray-x-row.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/ray-x-row2.jpg"
     ]
   },
   {
@@ -195,8 +195,8 @@
     "price": 130.0,
     "rating": 4.6,
     "image": [
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/neon-way-style.jpg?raw=true",
-      "https://github.com/razarevel/Revel-Shop/blob/main/images/women/neon-way-style2.jpg?raw=true"
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/neon-way-style.jpg",
+      "https://webrevelshop.s3.ap-northeast-1.amazonaws.com/women/neon-way-style2.jpg"
     ]
   }
 ]

@@ -1,9 +1,9 @@
-import SliderSection from "./components/Slider";
+import SliderSection from "./components/Swiper/Slider";
 
 function App() {
   return (
     <>
-      <SliderSection />
+      <SliderSection For="men" limit={10} />
     </>
   );
 }

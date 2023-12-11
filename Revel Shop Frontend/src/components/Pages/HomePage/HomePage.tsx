@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useCounter from "../../../useCounter";
 import NavbarDesktop from "../../resusableCom/Navbar/NavbarDesktop";
 import NavbarMobile from "../../resusableCom/Navbar/NavbarMobile";
@@ -9,6 +9,7 @@ import ProductSection from "./ProductSection/ProductSection";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import ContactSection from "./ContactSection/ContactSection";
 import { useInView } from "react-hook-inview";
+import Add_To_Cart from "../../resusableCom/Add_To_Cart/Add_To_Cart";
 
 export default function HomePage() {
   // functions
@@ -24,11 +25,13 @@ export default function HomePage() {
       setIsInView(true);
     } else if (!inView) setIsInView(false);
   }, [navNum, setNavNum, isInView]);
+  const [show, setShow] = useState(false);
 
   return (
     <>
-      <NavbarDesktop />
-      <NavbarMobile />
+      <Add_To_Cart setShow={() => setShow(!show)} show={!show} />
+      <NavbarDesktop setShow={() => setShow(!show)} />
+      <NavbarMobile setShowCart={() => setShow(!show)} />
       <HeroSectionMain />
       <SliderSection For="men" limit={10} />
       <div ref={ref}>

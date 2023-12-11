@@ -51,3 +51,11 @@
 .parent1:hover .child1 {
   height: 116px;
 }
+.hideCard {
+  height: 0;
+  transition: height 0.3s linear;
+}
+.showCard {
+  height: 100px;
+  transition: height 0.3s linear;
+}

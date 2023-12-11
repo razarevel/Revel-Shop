@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useCounter from "../../../useCounter";
 import NavbarDesktop from "../../resusableCom/Navbar/NavbarDesktop";
 import { useLocation } from "react-router-dom";
@@ -8,16 +8,11 @@ import FooterSection from "../../resusableCom/Footer/FooterSection";
 import ProductPageHeader from "./ProductPageHeader";
 
 import ProductPageGrid from "./ProductPageGrid";
+import Add_To_Cart from "../../resusableCom/Add_To_Cart/Add_To_Cart";
 
 export default function ProductPage() {
-  const {
-    navNum,
-    setNavNum,
-    setFor,
-    setIsInView,
-    sortPrice,
-    sortRating,
-  } = useCounter();
+  const { navNum, setNavNum, setFor, setIsInView, sortPrice, sortRating } =
+    useCounter();
   //   access url
   const location = useLocation();
   let currentPath = location.pathname;
@@ -71,15 +66,16 @@ export default function ProductPage() {
   } else if (lastPart === "kids") {
     SwiperHeader = header[2].heading;
     SwiperPara = header[2].para;
-  }
-  else if (lastPart === "accessories") {
+  } else if (lastPart === "accessories") {
     SwiperHeader = header[3].heading;
     SwiperPara = header[3].para;
   }
+  const [show, setShow] = useState(false);
   return (
     <>
-      <NavbarDesktop />
-      <NavbarMobile />
+      <Add_To_Cart setShow={() => setShow(!show)} show={!show} />
+      <NavbarDesktop setShow={() => setShow(!show)} />
+      <NavbarMobile setShowCart={() => setShow(!show)} />
       <ProductPageHeader heading={SwiperHeader} context={SwiperPara} />
       {/* grid */}
       <ProductPageGrid For={lastPart} sortby={sortPrice + "/" + sortRating} />

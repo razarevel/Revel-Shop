@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import img from "../../../assets/blackLogo.png";
 import { Link } from "react-router-dom";
 import useCounter from "../../../useCounter";
-export default function NavbarMobile() {
+interface Props {
+  setShowCart: () => void;
+}
+export default function NavbarMobile({ setShowCart }: Props) {
   const [show, setShow] = useState(false);
   const { navNum, isInView, setNavNum } = useCounter();
   const [renderKey, setRenderKey] = useState(0);
@@ -31,7 +34,7 @@ export default function NavbarMobile() {
     <div>
       <div className="relative">
         {/* Nav */}
-        <div className="flex items-center justify-between md:hidden px-4 py-5 sm:px-10 relative z-50 bg-white">
+        <div className="flex items-center justify-between md:hidden px-4 py-5 sm:px-10 relative z-30 bg-white">
           <img src={img} alt="" className="w-44" />
           {/* button */}
           <div className="flex items-center space-x-3">
@@ -59,7 +62,13 @@ export default function NavbarMobile() {
               ></div>
             </div>
             {/* add to cart */}
-            <button className="w-14 h-14 border flex items-center justify-center rounded-full border-gray-900 group hover:bg-black duration-300">
+            <button
+              onClick={setShowCart}
+              className={
+                "w-14 h-14 border flex items-center justify-center rounded-full border-gray-900 group hover:bg-black duration-300 " +
+                (!localStorage.getItem("add_to_carts") && " hidden")
+              }
+            >
               <svg
                 className="group-hover:fill-white duration-300"
                 height="30px"
@@ -95,7 +104,7 @@ export default function NavbarMobile() {
         {/* list */}
         <div
           key={renderKey}
-          className={`absolute w-full md:hidden z-30  ${
+          className={`absolute w-full md:hidden z-20  ${
             show ? " top-[5.8rem] " : " -top-52 "
           }  bg-gray-100 duration-500 overflow-hidden flex flex-col items-center justify-center`}
         >

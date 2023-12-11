@@ -19,6 +19,7 @@ export default function ProductDetailCard({ For, slug }: Props) {
   useEffect(() => {
     apiClient.get(`/${For}/${slug}`).then((res) => setData(res.data.data));
   }, []);
+
   return (
     <div className="container mx-auto max-w-7xl py-20 md:py-32 flex items-center justify-center">
       <div
@@ -52,7 +53,7 @@ export default function ProductDetailCard({ For, slug }: Props) {
               natus.
             </p>
           </div>
-          <ProductDetailButtons />
+          <ProductDetailButtons slug={data?.slug} For={For} />
         </div>
       </div>
     </div>

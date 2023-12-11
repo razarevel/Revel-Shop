@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import img from "../../../assets/blackLogo.png";
 import useCounter from "../../../useCounter";
 import { useState, useEffect } from "react";
-
-export default function NavbarDesktop() {
+interface Props{
+  setShow:()=>void;
+}
+export default function NavbarDesktop({setShow}:Props) {
   const { navNum, isInView, setNavNum } = useCounter();
   const [renderKey, setRenderKey] = useState(0);
 
@@ -50,7 +52,13 @@ export default function NavbarDesktop() {
                 </p>
               </Link>
             ))}
-            <button className="w-14 h-14 border flex items-center justify-center rounded-full border-gray-900 group hover:bg-black duration-300">
+            <button
+            onClick={setShow}
+              className={
+                "w-14 h-14 border flex items-center justify-center rounded-full border-gray-900 group hover:bg-black duration-300 " +
+                (!localStorage.getItem("add_to_carts") && " hidden")
+              }
+            >
               <svg
                 className="group-hover:fill-white duration-300"
                 height="30px"

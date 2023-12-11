@@ -11,7 +11,7 @@ exports.getAllMen = async (req, res) => {
       query = query.sort(sortBy);
     }
     if (req.query.limit) {
-      query = query.limit(req.query.limit*1);
+      query = query.limit(req.query.limit * 1);
     }
     const men = await query;
     res.status(200).json({

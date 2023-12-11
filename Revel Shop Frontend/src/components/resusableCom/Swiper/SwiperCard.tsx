@@ -2,8 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { Navigation } from "swiper/modules";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Stare from "./Stares";
+import { useInView } from "react-hook-inview";
+import useCounter from "../../../useCounter";
+import { Link } from "react-router-dom";
 interface Data {
   _id: any;
   name: string;
@@ -17,9 +20,20 @@ interface Props {
   Desktop?: boolean;
   Tabalet?: boolean;
   mobile?: boolean;
+  heading: string;
+  para: string;
+  link: string;
 }
-export default function SwiperCard({ data, Desktop, Tabalet, mobile }: Props) {
-  const [swiper, setSwiper] = useState<Swiper | null>(null);
+export default function SwiperCard({
+  data,
+  Desktop,
+  Tabalet,
+  mobile,
+  heading,
+  para,
+  link,
+}: Props) {
+  const [swiper, setSwiper] = useState<typeof Swiper | any>(null);
   const navLeft = useRef<HTMLButtonElement | null>(null);
   const navRight = useRef<HTMLButtonElement | null>(null);
   const slidPer = () => {
@@ -28,34 +42,55 @@ export default function SwiperCard({ data, Desktop, Tabalet, mobile }: Props) {
     else if (mobile) return 1;
     return 1;
   };
+  const [ref, inView] = useInView();
+  const { setIsInView, allInView } = useCounter();
+  useEffect(() => {
+    if (allInView || inView) setIsInView(true);
+    else if (!allInView && !inView) {
+      setIsInView(false);
+    }
+  }, [inView, allInView]);
   return (
     <div
-      className={`relative mt-32 flex items-center justify-center px-10  ${
+      className={`relative flex items-center justify-center px-10  ${
         mobile ? " space-x-1 max-w-sm " : " space-x-4 "
-      } container mx-auto`}
+      } container mx-auto `}
     >
-      <button
-        className="border border-spacing-x-1.5 border-black p-3 group hover:bg-black duration-300"
-        ref={navLeft}
-        onClick={() => swiper.slidePrev()}
-      >
-        <svg
-          className="fill-black group-hover:fill-white duration-300"
-          height="20px"
-          width="20px"
-          version="1.1"
-          id="Layer_1"
-          viewBox="0 0 330 330"
+      <div ref={ref}>
+        <button
+          className="border border-spacing-x-1.5 border-black p-3 group hover:bg-black duration-300"
+          ref={navLeft}
+          onClick={() => swiper.slidePrev()}
         >
-          <path
-            id="XMLID_92_"
-            d="M111.213,165.004L250.607,25.607c5.858-5.858,5.858-15.355,0-21.213c-5.858-5.858-15.355-5.858-21.213,0.001
+          <svg
+            className="fill-black group-hover:fill-white duration-300"
+            height="20px"
+            width="20px"
+            version="1.1"
+            id="Layer_1"
+            viewBox="0 0 330 330"
+          >
+            <path
+              id="XMLID_92_"
+              d="M111.213,165.004L250.607,25.607c5.858-5.858,5.858-15.355,0-21.213c-5.858-5.858-15.355-5.858-21.213,0.001
 	l-150,150.004C76.58,157.211,75,161.026,75,165.004c0,3.979,1.581,7.794,4.394,10.607l150,149.996
 	C232.322,328.536,236.161,330,240,330s7.678-1.464,10.607-4.394c5.858-5.858,5.858-15.355,0-21.213L111.213,165.004z"
-          />
-        </svg>
-      </button>
-      <div className={"overflow-hidden " + (mobile && "w-[80%]")}>
+            />
+          </svg>
+        </button>
+      </div>
+      <div className={"overflow-hidden space-y-10 " + (mobile && "w-[80%]")}>
+        <div className="flex items-center justify-between">
+          <div className="text-center md:text-start italic space-y-2">
+            <h1 className="text-3xl font-bold">{heading}</h1>
+            <p className="opacity-40 font-medium">{para}</p>
+          </div>
+          <Link to={link}>
+            <button className="border border-black font-medium px-4 py-2 hover:text-white hover:bg-black duration-300">
+              View More
+            </button>
+          </Link>
+        </div>
         <Swiper
           onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
           loop={true}
@@ -67,7 +102,7 @@ export default function SwiperCard({ data, Desktop, Tabalet, mobile }: Props) {
             nextEl: navRight.current,
           }}
         >
-          {data.map((el) => (
+          {data?.map((el) => (
             <SwiperSlide key={el._id}>
               <div className="flex flex-col items-start space-y-4 ">
                 <img src={el.image[0]} alt="" className="w-full" />

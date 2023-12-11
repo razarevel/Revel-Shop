@@ -27,3 +27,27 @@
     39% 35%
   );
 }
+/* men page */
+
+.parent0 {
+  position: relative;
+}
+.parent0 .child0 {
+  margin-top: 10px;
+  height: 0px;
+  transition: height 0.2s linear;
+}
+.parent0:hover .child0 {
+  height: 116px;
+}
+.parent1 {
+  position: relative;
+}
+.parent1 .child1 {
+  margin-top: 10px;
+  height: 0px;
+  transition: height 0.2s linear;
+}
+.parent1:hover .child1 {
+  height: 116px;
+}

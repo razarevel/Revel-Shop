@@ -1,11 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-import { Navigation } from "swiper/modules";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Stare from "./Stares";
-import { useInView } from "react-hook-inview";
-import useCounter from "../../../useCounter";
+
 import { Link } from "react-router-dom";
 interface Data {
   _id: any;
@@ -23,6 +20,7 @@ interface Props {
   heading: string;
   para: string;
   link: string;
+  For:string;
 }
 export default function SwiperCard({
   data,
@@ -32,8 +30,9 @@ export default function SwiperCard({
   heading,
   para,
   link,
+  For
 }: Props) {
-  const [swiper, setSwiper] = useState<typeof Swiper | any>(null);
+  const swiperRef = useRef<any>(null);
   const navLeft = useRef<HTMLButtonElement | null>(null);
   const navRight = useRef<HTMLButtonElement | null>(null);
   const slidPer = () => {
@@ -42,25 +41,18 @@ export default function SwiperCard({
     else if (mobile) return 1;
     return 1;
   };
-  const [ref, inView] = useInView();
-  const { setIsInView, allInView } = useCounter();
-  useEffect(() => {
-    if (allInView || inView) setIsInView(true);
-    else if (!allInView && !inView) {
-      setIsInView(false);
-    }
-  }, [inView, allInView]);
+
   return (
     <div
       className={`relative flex items-center justify-center px-10  ${
         mobile ? " space-x-1 max-w-sm " : " space-x-4 "
       } container mx-auto `}
     >
-      <div ref={ref}>
+      <div>
         <button
           className="border border-spacing-x-1.5 border-black p-3 group hover:bg-black duration-300"
           ref={navLeft}
-          onClick={() => swiper.slidePrev()}
+          onClick={() => swiperRef.current.swiper.slidePrev()}
         >
           <svg
             className="fill-black group-hover:fill-white duration-300"
@@ -92,35 +84,32 @@ export default function SwiperCard({
           </Link>
         </div>
         <Swiper
-          onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
+          ref={swiperRef}
           loop={true}
-          modules={[Navigation]}
           spaceBetween={20}
           slidesPerView={slidPer()}
-          navigation={{
-            prevEl: navLeft.current,
-            nextEl: navRight.current,
-          }}
         >
           {data?.map((el) => (
             <SwiperSlide key={el._id}>
-              <div className="flex flex-col items-start space-y-4 ">
-                <img src={el.image[0]} alt="" className="w-full" />
-                <div className="w-full">
-                  {/* card body */}
-                  <div className="flex items-center justify-between lg:px-1">
-                    {/* name */}
-                    <h1 className="text-2xl font-bold">{el.name}</h1>{" "}
-                    {/* stares */}
-                    <div className=" flex">
-                      <Stare rating={el.rating} />
+              <Link to={`/${For}/${el.slug}`}>
+                <div className="flex flex-col items-start space-y-4 duration-300 hover:scale-105">
+                  <img src={el.image[0]} alt="" className="w-full" />
+                  <div className="w-full">
+                    {/* card body */}
+                    <div className="flex items-center justify-between lg:px-1">
+                      {/* name */}
+                      <h1 className="text-2xl font-bold">{el.name}</h1>{" "}
+                      {/* stares */}
+                      <div className=" flex">
+                        <Stare rating={el.rating} />
+                      </div>
                     </div>
+                    <p className="text-xl font-semibold opacity-60">
+                      ${el.price}.00
+                    </p>
                   </div>
-                  <p className="text-xl font-semibold opacity-60">
-                    ${el.price}.00
-                  </p>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -129,7 +118,7 @@ export default function SwiperCard({
       <button
         className="border border-spacing-x-1.5 border-black p-3 group hover:bg-black duration-300"
         ref={navRight}
-        onClick={() => swiper.slideNext()}
+        onClick={() => swiperRef.current.swiper.slideNext()}
       >
         <svg
           className="fill-black group-hover:fill-white duration-300 rotate-180"

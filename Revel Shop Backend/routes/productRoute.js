@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 const {
   getAllMen,
-  getMenById,
+  getMenBySlug,
   getAllWomen,
-  getWomenById,
+  getWomenBySlug,
   getAllkids,
-  getKidsById,
+  getKidsBySlug,
   getAllAccessories,
-  getAccessoriesById,
+  getAccessoriesBySlug,
 } = require("../controller/basic_controller");
 const {
   postPurchase,
@@ -24,16 +24,16 @@ const {
 } = require("../controller/auth_controller");
 // men
 router.get("/men", getAllMen);
-router.get("/men/:id", getMenById);
+router.get("/men/:slug", getMenBySlug);
 // women
 router.get("/women", getAllWomen);
-router.get("/women/:id", getWomenById);
+router.get("/women/:slug", getWomenBySlug);
 //kids
 router.get("/kids", getAllkids);
-router.get("/kids/:id", getKidsById);
+router.get("/kids/:slug", getKidsBySlug);
 //accessories
 router.get("/accessories", getAllAccessories);
-router.get("/accessories/:id", getAccessoriesById);
+router.get("/accessories/:slug", getAccessoriesBySlug);
 // purchase
 router.get("/purchase/:email", getAllPurchase);
 router.post("/purchase", checkingProcductId, updateHistory, postPurchase);

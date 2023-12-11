@@ -5,14 +5,14 @@ import img3 from "./images/heroImage3.jpg";
 import img4 from "./images/heroImage4.jpg";
 export default function HeroSecContain2() {
   const context = [
-    { name: "Women", text: "Best Clothes For Women", img: img1, link: "/page/women" },
-    { name: "Men", text: "Best Clothes For Men", img: img2, link: "/page/men" },
-    { name: "Kids", text: "Best Clothes For Kids", img: img3, link: "/page/kids" },
+    { name: "Women", text: "Best Clothes For Women", img: img1, link: "/women" },
+    { name: "Men", text: "Best Clothes For Men", img: img2, link: "/men" },
+    { name: "Kids", text: "Best Clothes For Kids", img: img3, link: "/kids" },
     {
       name: "Accessories",
       text: "Best Trend Accessories",
       img: img4,
-      link: "/page/accessories",
+      link: "/accessories",
     },
   ];
   return (

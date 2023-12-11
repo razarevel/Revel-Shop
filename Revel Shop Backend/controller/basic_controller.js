@@ -26,15 +26,14 @@ exports.getAllMen = async (req, res) => {
     });
   }
 };
-exports.getMenById = async (req, res) => {
-  const id = req.params.id;
-  console.log(id);
-  const men = await Men.findOne({ _id: id });
-  res.status(200).json({
-    status: "success",
-    data: { men },
-  });
+exports.getMenBySlug = async (req, res) => {
   try {
+    const slug = req.params.slug;
+    const men = await Men.findOne({ slug: slug });
+    res.status(200).json({
+      status: "success",
+      data: men,
+    });
   } catch (err) {
     res.status(400).json({
       status: "fail",
@@ -66,12 +65,12 @@ exports.getAllWomen = async (req, res) => {
     });
   }
 };
-exports.getWomenById = async (req, res) => {
+exports.getWomenBySlug = async (req, res) => {
   try {
-    const women = await Women.findOne({ _id: req.params.id });
+    const women = await Women.findOne({ slug: req.params.slug });
     res.status(200).json({
       status: "success",
-      data: { women },
+      data: women,
     });
   } catch (err) {
     res.status(400).json({
@@ -104,12 +103,12 @@ exports.getAllkids = async (req, res) => {
     });
   }
 };
-exports.getKidsById = async (req, res) => {
+exports.getKidsBySlug = async (req, res) => {
   try {
-    const kids = await Kids.findOne({ _id: req.params.id });
+    const kids = await Kids.findOne({ slug: req.params.slug });
     res.status(200).json({
       status: "success",
-      data: { kids },
+      data: kids,
     });
   } catch (err) {
     res.status(400).json({
@@ -142,12 +141,12 @@ exports.getAllAccessories = async (req, res) => {
     });
   }
 };
-exports.getAccessoriesById = async (req, res) => {
+exports.getAccessoriesBySlug = async (req, res) => {
   try {
-    const accessories = await Accessories.findOne({ _id: req.params.id });
+    const accessories = await Accessories.findOne({ slug: req.params.slug });
     res.status(200).json({
       status: "success",
-      data: { accessories },
+      data: accessories,
     });
   } catch (err) {
     res.status(400).json({

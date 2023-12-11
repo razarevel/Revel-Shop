@@ -63,8 +63,8 @@ export default function SliderSection({ For, limit }: Props) {
     SwiperHeader = header[2].heading;
     SwiperPara = header[2].para;
     SwiperLink = header[2].link;
-  } 
-  
+  }
+
   return (
     <>
       <div className="py-16">
@@ -77,6 +77,7 @@ export default function SliderSection({ For, limit }: Props) {
               heading={SwiperHeader}
               para={SwiperPara}
               link={SwiperLink}
+              For={For}
             />
           </div>
           <div className="hidden md:block lg:hidden">
@@ -86,6 +87,7 @@ export default function SliderSection({ For, limit }: Props) {
               heading={SwiperHeader}
               para={SwiperPara}
               link={SwiperLink}
+              For={For}
             />
           </div>
           <div className="md:hidden">
@@ -95,6 +97,7 @@ export default function SliderSection({ For, limit }: Props) {
               heading={SwiperHeader}
               para={SwiperPara}
               link={SwiperLink}
+              For={For}
             />
           </div>
         </div>

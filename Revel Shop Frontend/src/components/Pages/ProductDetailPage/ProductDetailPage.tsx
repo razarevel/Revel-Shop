@@ -4,6 +4,8 @@ import NavbarMobile from "../../resusableCom/Navbar/NavbarMobile";
 import FooterSection from "../../resusableCom/Footer/FooterSection";
 import { useEffect } from "react";
 import useCounter from "../../../useCounter";
+import ProductDetailHeader from "./ProductDetailPageCom/ProductDetailHeader";
+import ProductDetailCard from "./ProductDetailPageCom/ProductDetailCard";
 export default function ProductDetailPage() {
   const { navNum, setNavNum, setFor, setIsInView } = useCounter();
   const location = useLocation();
@@ -25,11 +27,13 @@ export default function ProductDetailPage() {
     }
     setIsInView(false);
   }, [navNum, setNavNum]);
+  
   return (
     <>
       <NavbarDesktop />
       <NavbarMobile />
-      <ProductDetailPage />
+      <ProductDetailHeader />
+      <ProductDetailCard For={parts[1]} slug={parts[2]} />
       <FooterSection />
     </>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ProductHeading() {
   return (
     <>
@@ -59,9 +61,11 @@ export default function ProductHeading() {
             numquam aliquam ratione sint autem impedit ex.
           </span>
         </p>
-        <button className="px-4 py-2 border border-black font-medium hover:bg-black hover:text-white duration-300">
-          View All Product
-        </button>
+        <Link to={"all-products"}>
+          <button className="px-4 py-2 border border-black font-medium hover:bg-black hover:text-white duration-300">
+            View All Product
+          </button>
+        </Link>
       </div>
     </>
   );

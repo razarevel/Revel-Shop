@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import apiClient from "../../../resusableCom/apiClient";
 import Stare from "../../../resusableCom/Swiper/Stares";
 import ProductDetailButtons from "./ProductDetailButtons";
+import useCounter from "../../../../useCounter";
 interface Data {
   _id: any;
   name: string;
@@ -16,10 +17,44 @@ interface Props {
 }
 export default function ProductDetailCard({ For, slug }: Props) {
   const [data, setData] = useState<Data>();
+  const { isInView, setIsInView, Add_to_cart, setaddToCart } = useCounter();
+
   useEffect(() => {
     apiClient.get(`/${For}/${slug}`).then((res) => setData(res.data.data));
   }, []);
+  // handle Cart
+  const handleAddToCart = (num: number) => {
+    const newData = {
+      name: data?.name,
+      slug: data?.slug,
+      price: data?.price,
+      rating: data?.rating,
+      img: data?.image[0],
+      quantity: num,
+      For: For,
+    };
 
+    if (localStorage.getItem("add_to_carts")) {
+      const cartsJSON = localStorage.getItem("add_to_carts");
+      let carts = [];
+      if (cartsJSON !== null) {
+        carts = JSON.parse(cartsJSON);
+      }
+      const existingItem = carts.find((el: any) => el.slug === newData.slug);
+      if (existingItem) {
+        // Item already exists, update quantity
+        existingItem.quantity = newData.quantity;
+        setaddToCart(Add_to_cart + 1);
+      } else {
+        // Item doesn't exist, add it to the array
+        carts.push(newData);
+      }
+      localStorage.setItem("add_to_carts", JSON.stringify(carts));
+    } else {
+      localStorage.setItem("add_to_carts", JSON.stringify([newData]));
+    }
+    setIsInView(!isInView);
+  };
   return (
     <div className="container mx-auto max-w-7xl py-20 md:py-32 flex items-center justify-center">
       <div
@@ -53,7 +88,7 @@ export default function ProductDetailCard({ For, slug }: Props) {
               natus.
             </p>
           </div>
-          <ProductDetailButtons slug={data?.slug} For={For} />
+          <ProductDetailButtons handleCart={handleAddToCart} />
         </div>
       </div>
     </div>

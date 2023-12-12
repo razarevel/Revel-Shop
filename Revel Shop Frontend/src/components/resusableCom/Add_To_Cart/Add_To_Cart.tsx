@@ -9,14 +9,14 @@ export default function Add_To_Cart({ setShow, show }: Props) {
     <div className="cart">
       <div
         className={
-          "fixed w-full min-h-full bg-black z-40 right-0 opacity-80 " +
+          "fixed w-full min-h-full bg-black z-30 right-0 opacity-80 " +
           (show && "hidden")
         }
       ></div>
       {/* context */}
       <div
         className={
-          "fixed z-50 w-full bg-white h-full sm:w-[80%] md:w-[50%] lg:w-[40%] xl:w-[20%] right-0 space-y-4 duration-300 " +
+          "fixed z-40 w-full bg-white h-full sm:w-[80%] md:w-[50%] lg:w-[40%] xl:w-[20%] right-0 space-y-4 duration-300 " +
           (show && " translate-x-full")
         }
       >
@@ -37,6 +37,11 @@ export default function Add_To_Cart({ setShow, show }: Props) {
           <img src={Logo} alt="" className="w-56" />
         </div>
         <Add_To_CartGrid />
+        <div className="absolute bottom-0 w-full h-24 flex items-end z-50">
+          <button className="flex font-medium items-center justify-center duration-300 hover:text-white bg-white hover:bg-black w-full h-16  border border-black text-black z-50">
+            View All Carts
+          </button>
+        </div>
       </div>
     </div>
   );

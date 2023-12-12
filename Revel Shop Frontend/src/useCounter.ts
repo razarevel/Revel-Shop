@@ -13,6 +13,8 @@ interface Props {
   setSortPrice: (newString: string) => void;
   sortRating: string;
   setSortRating: (newString: string) => void;
+  Add_to_cart: number;
+  setaddToCart: (newNum: number | any) => void;
 }
 const useCounter = create<Props>((set) => ({
   navNum: 0,
@@ -27,5 +29,7 @@ const useCounter = create<Props>((set) => ({
   setSortPrice: (newString) => set(() => ({ sortPrice: newString })),
   sortRating: "",
   setSortRating: (newString) => set(() => ({ sortRating: newString })),
+  Add_to_cart: 0,
+  setaddToCart: (newNum) => set(() => ({ Add_to_cart: newNum })),
 }));
 export default useCounter;

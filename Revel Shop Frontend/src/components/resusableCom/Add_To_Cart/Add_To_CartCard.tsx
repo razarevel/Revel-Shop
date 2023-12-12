@@ -1,31 +1,32 @@
-import { useEffect, useState } from "react";
-import apiClient from "../apiClient";
+import { useState } from "react";
 import Stare from "../Swiper/Stares";
 import useCounter from "../../../useCounter";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-interface Data {
-  _id: any;
-  name: string;
-  slug: string;
-  price: number;
-  rating: any;
-  image: string[];
-}
+
 interface Props {
+  name: string;
+  price: number;
+  rating: number;
+  img: string;
   quantity: number;
   slug: string;
   For: string;
+  filterCart: (slug: string) => void;
 }
-export default function Add_To_CartCard({ quantity, slug, For }: Props) {
-  const [data, setData] = useState<Data>();
-  useEffect(() => {
-    apiClient.get(`/${For}/${slug}`).then((res) => setData(res.data.data));
-  }, []);
+export default function Add_To_CartCard({
+  name,
+  price,
+  rating,
+  img,
+  quantity,
+  slug,
+  For,
+  filterCart,
+}: Props) {
   const [num, setNum] = useState(quantity);
   const [show, setShow] = useState(false);
   const { isInView, setIsInView } = useCounter();
-
   return (
     <>
       <div className="border w-full p-2 space-y-3 cartCard">
@@ -38,7 +39,7 @@ export default function Add_To_CartCard({ quantity, slug, For }: Props) {
             if (!show) setShow(true);
           }}
         >
-          <img src={data?.image[0]} alt="" className="w-14" />
+          <img src={img} alt="" className="w-14" />
           <div className="w-full">
             {show ? (
               <Link
@@ -50,15 +51,15 @@ export default function Add_To_CartCard({ quantity, slug, For }: Props) {
                   }, 100);
                 }}
               >
-                {data?.name}
+                {name}
               </Link>
             ) : (
-              <h1 className="text-lg font-semibold">{data?.name}</h1>
+              <h1 className="text-lg font-semibold">{name}</h1>
             )}
             <div className="flex items-center justify-between">
-              <p className="font-medium opacity-75">${data?.price}.00</p>
+              <p className="font-medium opacity-75">${price}.00</p>
               <div className="flex">
-                <Stare rating={data?.rating} />
+                <Stare rating={rating} />
               </div>
             </div>
           </div>
@@ -115,7 +116,7 @@ export default function Add_To_CartCard({ quantity, slug, For }: Props) {
           <div className="space-x-4 flex">
             <button
               className={
-                "border font-medium border-black px-4 py-2 " +
+                "border font-medium border-black px-4 py-2 hidden sm:block " +
                 (!(num === 0) &&
                   " hover:bg-black hover:text-white duration-300")
               }
@@ -132,7 +133,9 @@ export default function Add_To_CartCard({ quantity, slug, For }: Props) {
                   if (cartsJSON !== null) {
                     carts = JSON.parse(cartsJSON);
                   }
-                  carts.push(data);
+                  carts.map((el: any) =>
+                    el.slug === slug ? (el.quantity = num) : null
+                  );
                   localStorage.setItem("add_to_carts", JSON.stringify(carts));
                 } else {
                   localStorage.setItem("add_to_carts", JSON.stringify([data]));
@@ -150,6 +153,14 @@ export default function Add_To_CartCard({ quantity, slug, For }: Props) {
               disabled={num === 0}
             >
               Buy now
+            </button>
+            <button
+              className={
+                "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 hover:opacity-100 "
+              }
+              onClick={() => filterCart(slug)}
+            >
+              Delete
             </button>
           </div>
         </div>

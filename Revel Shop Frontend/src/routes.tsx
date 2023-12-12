@@ -9,6 +9,6 @@ const router = createBrowserRouter([
   { path: "/:for", element: <ProductPage /> },
   { path: "/:for/:slug", element: <ProductDetailPage /> },
   { path: "/all-products", element: <ProductAllPage /> },
-  { path: "/", element: <HomePage /> },
+  { path: "/add_to_cart", element: <HomePage /> },
 ]);
 export default router;

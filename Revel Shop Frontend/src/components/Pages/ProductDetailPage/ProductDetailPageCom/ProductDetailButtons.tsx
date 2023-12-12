@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-import useCounter from "../../../../useCounter";
+
 interface Props {
-  slug: string | any;
-  For: string | any;
+  handleCart: (num:number) => void;
 }
-export default function ProductDetailButtons({ slug, For }: Props) {
+export default function ProductDetailButtons({ handleCart }: Props) {
   const [num, setNum] = useState(1);
-  const { isInView, setIsInView } = useCounter();
   return (
     <div
       className="flex flex-col space-y-10 sm:flex-row sm:space-y-0 md:flex-col md:space-y-10
@@ -49,25 +47,7 @@ export default function ProductDetailButtons({ slug, For }: Props) {
             (!(num === 0) && " hover:bg-black hover:text-white duration-300")
           }
           disabled={num === 0}
-          onClick={() => {
-            const data = {
-              slug: slug,
-              quantity: num,
-              For: For,
-            };
-            if (localStorage.getItem("add_to_carts")) {
-              const cartsJSON = localStorage.getItem("add_to_carts");
-              let carts = [];
-              if (cartsJSON !== null) {
-                carts = JSON.parse(cartsJSON);
-              }
-              carts.push(data);
-              localStorage.setItem("add_to_carts", JSON.stringify(carts));
-            } else {
-              localStorage.setItem("add_to_carts", JSON.stringify([data]));
-            }
-            setIsInView(!isInView);
-          }}
+          onClick={()=>handleCart(num)}
         >
           Add To Cart
         </button>

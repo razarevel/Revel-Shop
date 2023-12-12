@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img from "./images/heroImage.jpg";
 
 export default function HeroSecContain1() {
@@ -12,9 +13,14 @@ export default function HeroSecContain1() {
           <p className="italic opacity-60">
             Awesome, clean & creative Online Shop
           </p>
-          <button className="border text-sm px-4 py-2 duration-300 hover:bg-white hover:text-black opacity-80">
-            Purchase Now!
-          </button>
+          <div>
+            <Link
+              to={"all-products"}
+              className="border text-sm px-4 py-2 duration-300 hover:bg-white hover:text-black opacity-80 relative"
+            >
+              Purchase Now!
+            </Link>
+          </div>
         </div>
       </div>
     </>

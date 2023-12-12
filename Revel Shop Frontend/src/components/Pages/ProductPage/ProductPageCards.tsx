@@ -17,8 +17,14 @@ export default function ProductPageCard({
 }: Props) {
   return (
     <Link to={link}>
-      <div className="flex flex-col items-start space-y-4 hover:scale-105 duration-300 hover:bg-slate-50">
-        <img src={img[0]} alt="" className="w-full" />
+      <div className="flex flex-col items-start space-y-4  duration-300 hover:bg-slate-50 group">
+        <div className="w-full overflow-hidden">
+          <img
+            src={img[0]}
+            alt=""
+            className="w-full group-hover:scale-110 duration-300"
+          />
+        </div>
         <div className="w-full">
           {/* card body */}
           <div className="flex items-center justify-between lg:px-1">

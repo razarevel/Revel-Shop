@@ -20,7 +20,7 @@ interface Props {
   heading: string;
   para: string;
   link: string;
-  For:string;
+  For: string;
 }
 export default function SwiperCard({
   data,
@@ -30,7 +30,7 @@ export default function SwiperCard({
   heading,
   para,
   link,
-  For
+  For,
 }: Props) {
   const swiperRef = useRef<any>(null);
   const navLeft = useRef<HTMLButtonElement | null>(null);
@@ -92,8 +92,14 @@ export default function SwiperCard({
           {data?.map((el) => (
             <SwiperSlide key={el._id}>
               <Link to={`/${For}/${el.slug}`}>
-                <div className="flex flex-col items-start space-y-4 duration-300 hover:scale-105">
-                  <img src={el.image[0]} alt="" className="w-full" />
+                <div className="flex flex-col items-start space-y-4 duration-300 group overflow-hidden">
+                  <div className="w-full overflow-hidden">
+                    <img
+                      src={el.image[0]}
+                      alt=""
+                      className="w-full group-hover:scale-110 duration-300"
+                    />
+                  </div>
                   <div className="w-full">
                     {/* card body */}
                     <div className="flex items-center justify-between lg:px-1">

@@ -2,27 +2,30 @@ const footerContext = [
   {
     heading: "Shopping & Categories",
     sections: [
-      { text: "Men's Shopping", link: "/page/men" },
-      { text: "Women's Shopping", link: "/page/women" },
-      { text: "Kid's Shopping", link: "/page/kids" },
-      { text: "Accessories's Shopping", link: "/page/accessories" },
+      { text: "Men's Shopping", link: "/men" },
+      { text: "Women's Shopping", link: "/women" },
+      { text: "Kid's Shopping", link: "/kids" },
+      { text: "Accessories's Shopping", link: "/accessories" },
     ],
   },
   {
     heading: "Useful Links",
     sections: [
-      { text: "Home Page", link: "/" },
-      { text: "Products", link: "/" },
-      { text: "Help", link: "/" },
-      { text: "Contact Us", link: "/" },
+      { text: "Home Page", link: "/faq" },
+      { text: "Products", link: "/all-products" },
+      { text: "Help", link: "/help" },
+      { text: "Contact Us", link: "/contact_Us" },
     ],
   },
   {
     heading: "Help & Information",
     sections: [
-      { text: "Help", link: "/" },
-      { text: "FAQ's", link: "/" },
-      { text: "Help", link: "/" },
+      { text: "Help", link: "/help" },
+      { text: "FAQ's", link: "/faq" },
+      {
+        text: "About us",
+        link: "https://www.linkedin.com/in/raza-revel-4241a5276/",
+      },
     ],
   },
 ];

@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* remove arrows */
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-arrow {
+  -moz-appearance: textfield;
+}
+textarea {
+  resize: none;
+}
 .stare {
   -webkit-clip-path: polygon(
     50% 0%,
@@ -57,5 +70,14 @@
 }
 .showCard {
   height: 100px;
+  transition: height 0.3s linear;
+}
+/* FAQ */
+.faq .showFaq {
+  height: 120px;
+  transition: height 0.3s linear;
+}
+.faq .hideFaq {
+  height: 0px;
   transition: height 0.3s linear;
 }

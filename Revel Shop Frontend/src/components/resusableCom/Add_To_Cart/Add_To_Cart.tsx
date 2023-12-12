@@ -1,12 +1,20 @@
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/blackLogo.png";
 import Add_To_CartGrid from "./Add_To_CartGrid";
+import { useEffect, useState } from "react";
+import useCounter from "../../../useCounter";
 interface Props {
   show: boolean;
   setShow: () => void;
 }
 export default function Add_To_Cart({ setShow, show }: Props) {
+  const { isInView } = useCounter();
+  const [renderkey, setRenderKey] = useState(0);
+  useEffect(() => {
+    setRenderKey((prevKey) => prevKey + 1);
+  }, [isInView]);
   return (
-    <div className="cart">
+    <div className="cart" key={renderkey}>
       <div
         className={
           "fixed w-full min-h-full bg-black z-30 right-0 opacity-80 " +
@@ -38,9 +46,12 @@ export default function Add_To_Cart({ setShow, show }: Props) {
         </div>
         <Add_To_CartGrid />
         <div className="absolute bottom-0 w-full h-24 flex items-end z-50">
-          <button className="flex font-medium items-center justify-center duration-300 hover:text-white bg-white hover:bg-black w-full h-16  border border-black text-black z-50">
+          <Link
+            to={"/add_to_cart"}
+            className="flex font-medium items-center justify-center duration-300 hover:text-white bg-white hover:bg-black w-full h-16  border border-black text-black z-50"
+          >
             View All Carts
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -158,7 +158,10 @@ export default function Add_To_CartCard({
               className={
                 "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 hover:opacity-100 "
               }
-              onClick={() => filterCart(slug)}
+              onClick={() => {
+                filterCart(slug);
+                setIsInView(!isInView);
+              }}
             >
               Delete
             </button>

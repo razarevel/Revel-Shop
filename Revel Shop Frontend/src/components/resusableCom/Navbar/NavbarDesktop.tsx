@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import img from "../../../assets/blackLogo.png";
 import useCounter from "../../../useCounter";
+import { MdChevronLeft } from "react-icons/md";
 import { useState, useEffect } from "react";
-interface Props{
-  setShow:()=>void;
+interface Props {
+  setShow: () => void;
 }
-export default function NavbarDesktop({setShow}:Props) {
+export default function NavbarDesktop({ setShow }: Props) {
   const { navNum, isInView, setNavNum } = useCounter();
   const [renderKey, setRenderKey] = useState(0);
 
@@ -13,7 +14,6 @@ export default function NavbarDesktop({setShow}:Props) {
     setRenderKey((prevKey) => prevKey + 1);
   }, [navNum, isInView]);
   const nav = [
-    { id: 0, context: "Home", link: "/", func: () => setNavNum(0) },
     { id: 1, context: "Men's", link: "/men", func: () => setNavNum(1) },
     {
       id: 2,
@@ -39,21 +39,54 @@ export default function NavbarDesktop({setShow}:Props) {
           {/* Logo */}
           <img src={img} alt="" className="w-56" />
           <div className="flex items-center justify-center space-x-6">
-            {nav.map((el, index) => (
-              <Link to={el.link} key={index}>
-                <p
-                  onClick={el.func}
+            {/* home */}
+            <Link to={"/"} key={0}>
+              <p
+                onClick={() => setNavNum(0)}
+                className={
+                  "text-lg font-medium " + (0 === navNum && " opacity-30 ")
+                }
+              >
+                Home
+              </p>
+            </Link>
+            {/* products */}
+            <div className="relative product group">
+              <Link to={"/all-products"}>
+                <div
+                  onClick={() => setNavNum(5)}
                   className={
-                    "text-lg font-medium " +
-                    (el.id === navNum && " opacity-30 ")
+                    "text-lg font-medium flex items-center justify-center" +
+                    (5 === navNum && " opacity-30 ")
                   }
                 >
-                  {el.context}
-                </p>
+                  <p>Product</p>
+                  <div className="rotate-90 duration-300 group-hover:-rotate-90 self-end">
+                    <MdChevronLeft size="25" />
+                  </div>
+                </div>
               </Link>
-            ))}
+              <div
+                className="absolute bg-white shadow-lg w-36  px-6 -translate-x-6 space-y-5 flex flex-col items-start justify-center  z-40 overflow-hidden
+               all_product"
+              >
+                {nav.map((el, index) => (
+                  <Link to={el.link} key={index}>
+                    <p
+                      onClick={el.func}
+                      className={
+                        "text-lg font-medium " +
+                        (el.id === navNum && " opacity-30 ")
+                      }
+                    >
+                      {el.context}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
             <button
-            onClick={setShow}
+              onClick={setShow}
               className={
                 "w-14 h-14 border flex items-center justify-center rounded-full border-gray-900 group hover:bg-black duration-300 " +
                 (!localStorage.getItem("add_to_carts") && " hidden")

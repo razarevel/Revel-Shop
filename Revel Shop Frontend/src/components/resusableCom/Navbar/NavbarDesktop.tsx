@@ -85,6 +85,28 @@ export default function NavbarDesktop({ setShow }: Props) {
                 ))}
               </div>
             </div>
+            {/* authentication Buttons */}
+            <Link to={"/"} key={nav.length + 1}>
+              <p
+                onClick={() => setNavNum(6)}
+                className={
+                  "text-lg font-medium " + (6 === navNum && " opacity-30 ")
+                }
+              >
+                Sign in
+              </p>
+            </Link>
+            <Link to={"/"} key={nav.length + 2}>
+              <button
+                onClick={() => setNavNum(7)}
+                className={
+                  "text-lg font-medium border px-4 py-2 duration-300 bg-black text-white opacity-80 hover:opacity-100 " +
+                  (8 === navNum && " opacity-30 ")
+                }
+              >
+                Sign up
+              </button>
+            </Link>
             <button
               onClick={setShow}
               className={

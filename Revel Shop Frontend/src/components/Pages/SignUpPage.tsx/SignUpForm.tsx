@@ -21,6 +21,7 @@ export default function SiginUpForm() {
     resolver: zodResolver(schema),
   });
   const [showError, setShowError] = useState(false);
+  const [rememCheck, setRememCheck] = useState(false);
   const [files, setFiles] = useState<any>();
   const [preview, setPreview] = useState<any>();
   useEffect(() => {

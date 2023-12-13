@@ -61,7 +61,7 @@ export default function NavbarDesktop({ setShow }: Props) {
                   }
                 >
                   <p>Product</p>
-                  <div className="rotate-90 duration-300 group-hover:-rotate-90 self-end">
+                  <div className="-rotate-90 duration-300 group-hover:rotate-90 self-end">
                     <MdChevronLeft size="25" />
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export default function NavbarDesktop({ setShow }: Props) {
               </div>
             </div>
             {/* authentication Buttons */}
-            <Link to={"/"} key={nav.length + 1}>
+            <Link to={"/signin"} key={nav.length + 1}>
               <p
                 onClick={() => setNavNum(6)}
                 className={
@@ -96,7 +96,7 @@ export default function NavbarDesktop({ setShow }: Props) {
                 Sign in
               </p>
             </Link>
-            <Link to={"/"} key={nav.length + 2}>
+            <Link to={"/signup"} key={nav.length + 2}>
               <button
                 onClick={() => setNavNum(7)}
                 className={

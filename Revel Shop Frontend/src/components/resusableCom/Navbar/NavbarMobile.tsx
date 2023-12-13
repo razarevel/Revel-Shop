@@ -31,7 +31,7 @@ export default function NavbarMobile({ setShowCart }: Props) {
     },
   ];
   return (
-    <div>
+    <div className="mobileNav">
       <div className="relative">
         {/* Nav */}
         <div className="flex items-center justify-between md:hidden px-4 py-5 sm:px-10 relative z-30 bg-white">
@@ -104,9 +104,9 @@ export default function NavbarMobile({ setShowCart }: Props) {
         {/* list */}
         <div
           key={renderKey}
-          className={`absolute w-full md:hidden z-20  ${
-            show ? " top-[5.8rem] " : " -top-52 "
-          }  bg-gray-100 duration-500 overflow-hidden flex flex-col items-center justify-center`}
+          className={`absolute w-full md:hidden z-30 bg-gray-100 duration-500 overflow-hidden flex flex-col items-center justify-center  ${
+            show ? " showNav" : "hideNav"
+          }`}
         >
           {nav.map((el, index) => (
             <Link
@@ -124,6 +124,32 @@ export default function NavbarMobile({ setShowCart }: Props) {
               </p>
             </Link>
           ))}
+          {/* authentication button */}
+          <div className="flex items-center justify-center w-full">
+            <Link
+              to={"/signin"}
+              key={nav.length + 1}
+              className="w-full  text-center"
+            >
+              <div
+                className={
+                  "text-lg font-medium py-3" +
+                  (nav.length + 1 === navNum && " opacity-30 ")
+                }
+              >
+                <p>Sign in</p>
+              </div>
+            </Link>
+            <Link
+              to={"/signup"}
+              key={nav.length + 1}
+              className="w-full  text-center"
+            >
+              <div className={"text-lg font-medium py-3 bg-black text-white"}>
+                Sign up
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

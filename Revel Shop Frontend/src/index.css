@@ -14,6 +14,15 @@
 textarea {
   resize: none;
 }
+input[type="checkbox"] {
+  accent-color: black;
+}
+
+#upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
 .stare {
   -webkit-clip-path: polygon(
     50% 0%,
@@ -87,5 +96,13 @@ textarea {
 }
 .product:hover .all_product {
   height: 200px;
+  transition: height 0.3s linear;
+}
+.mobileNav .hideNav {
+  height: 0px;
+  transition: height 0.3s linear;
+}
+.mobileNav .showNav {
+  height: 318px;
   transition: height 0.3s linear;
 }

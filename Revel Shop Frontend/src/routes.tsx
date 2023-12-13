@@ -5,6 +5,8 @@ import ProductDetailPage from "./components/Pages/ProductDetailPage/ProductDetai
 import ProductAllPage from "./components/Pages/ProductAllPage/ProductAllPage";
 import AddToCartPage from "./components/Pages/Add_To_CartPage/AddToCartPage";
 import RawPage from "./components/Pages/RawPage/RawPage";
+import SigninPage from "./components/Pages/SigninPage/SigninPage";
+import SignUpPage from "./components/Pages/SignUpPage.tsx/SignUpPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
@@ -16,5 +18,8 @@ const router = createBrowserRouter([
   { path: "/help", element: <RawPage /> },
   { path: "/contact_Us", element: <RawPage /> },
   { path: "/faq", element: <RawPage /> },
+  // authentication
+  { path: "/signin", element: <SigninPage /> },
+  { path: "/signup", element: <SignUpPage /> },
 ]);
 export default router;

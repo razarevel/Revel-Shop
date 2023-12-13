@@ -14,7 +14,7 @@ const useSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please Enter your password"],
   },
-  passwordConform: {
+  passwordConfrom: {
     type: String,
     required: [true, "password conform is required"],
     validate: {
@@ -24,11 +24,15 @@ const useSchema = new mongoose.Schema({
       message: "Password and Conform password are not the sames",
     },
   },
+  image: {
+    type: String,
+    default: "no",
+  },
 });
 useSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
   this.password = await bcryptjs.hash(this.password, 12);
-  this.passwordConform = undefined;
+  this.passwordConfrom = undefined;
   next();
 });
 useSchema.methods.correctPassword = async function (

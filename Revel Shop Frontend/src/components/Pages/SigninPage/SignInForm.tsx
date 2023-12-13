@@ -1,8 +1,10 @@
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
-import { useForm, FieldValues } from "react-hook-form";
+import { useForm, FieldValues, useController } from "react-hook-form";
 import { z } from "zod";
 import img from "./signupPNG.png";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import apiClient from "../../resusableCom/apiClient";
 const schema = z.object({
   email: z.string().min(1),
   password: z.string().min(1),
@@ -17,12 +19,37 @@ export default function SiginInForm() {
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
+  const [data, setData] = useState<any>();
+  const [isLoading, setLoading] = useState(false);
+  const [existError, setExistError] = useState(false);
+  useEffect(() => {
+    if (!data) return;
+    setLoading(true);
+    apiClient
+      .post("/login", data)
+      .then((res) => {
+        localStorage.setItem("token", res.data.token);
+        setExistError(false);
+        setLoading(false);
+        setInterval(() => {
+          window.location.reload();
+        }, 500);
+      })
+      .catch(() => {
+        setExistError(true);
+        setLoading(false);
+      });
+  }, [data]);
   const onSubmit = (data: FieldValues) => {
-    console.log(data);
-    reset();
+    setData(data);
   };
+  if (localStorage.getItem("token")) return <Navigate to={"/"} />;
   return (
-    <>
+    <div className={`space-y-14 relative ${isLoading && "opacity-70"}`}>
+      {isLoading && (
+        <div className="absolute top-0 left-0 w-full h-full z-20"></div>
+      )}
+      <h1 className="text-3xl font-semibold">Sign in:</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* email */}
         <div className="flex flex-col space-y-3">
@@ -51,6 +78,11 @@ export default function SiginInForm() {
             className="focus:outline-none border border-black px-4 py-2 font-medium opacity-80"
             placeholder="Please Enter your Password"
           />
+          {existError && (
+            <div className=" font-medium italic opacity-70">
+              Email or Password incorrects
+            </div>
+          )}
         </div>
         <div className="flex items-center justify-between">
           {/* remember me */}
@@ -95,6 +127,6 @@ export default function SiginInForm() {
           </div>
         </Link>
       </div>
-    </>
+    </div>
   );
 }

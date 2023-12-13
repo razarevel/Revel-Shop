@@ -1,9 +1,11 @@
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
 import { useEffect, useState } from "react";
 import { useForm, FieldValues } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { z } from "zod";
 import img from "./customerPNG.png";
+import apiClient from "../../resusableCom/apiClient";
+import { Buffer } from "buffer";
 const schema = z.object({
   name: z.string().min(1),
   email: z.string().min(1),
@@ -20,33 +22,69 @@ export default function SiginUpForm() {
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
+  const [file, setFiles] = useState<any>();
   const [showError, setShowError] = useState(false);
+  const [existError, setExistError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [rememCheck, setRememCheck] = useState(false);
-  const [files, setFiles] = useState<any>();
   const [preview, setPreview] = useState<any>();
+  const [data, setData] = useState<any>(false);
   useEffect(() => {
-    if (!files) return;
-    let tmp = URL.createObjectURL(files);
+    if (!file) return;
+    let tmp = URL.createObjectURL(file);
     setPreview(tmp);
-  }, [files]);
-  const onSubmit = (data: FieldValues) => {
+  }, [file]);
+  useEffect(() => {
+    if (!data) return;
+    setIsLoading(true);
+    const formData = new FormData();
+    formData.append("image", file);
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("password", data.password);
+    formData.append("passwordConfrom", data.passwordConfrom);
+    apiClient
+      .post("/signup", formData)
+      .then((res) => {
+        localStorage.setItem("token", res.data.token);
+        setExistError(false);
+        setIsLoading(false);
+        reset();
+        setInterval(() => {
+          window.location.reload();
+        }, 500);
+      })
+      .catch(() => {
+        setExistError(true);
+        setIsLoading(false);
+      });
+  }, [data]);
+  const onSubmit = async (data: FieldValues) => {
     if (data.password !== data.passwordConfrom) return setShowError(true);
     setShowError(false);
-    console.log(data);
-    console.log(rememCheck);
-    if (files) console.log(files);
-    reset();
-    setFiles(null);
+    // console.log(rememCheck);
+    setData(data);
+    if (file) {
+      const buffer = await file.arrayBuffer();
+      data.image = Buffer.from(buffer);
+    }
+    // console.log(data);
+    setData(data);
   };
+  if (localStorage.getItem("token")) return <Navigate to={"/"} />;
   return (
-    <div className="space-y-4">
+    <div className={`space-y-4 relative ${isLoading && "opacity-70"}`}>
+      {/* loading */}
+      {isLoading && (
+        <div className="absolute top-0 left-0  w-full h-full z-20"></div>
+      )}
       <h1 className="text-2xl font-semibold">Sign Up:</h1>
       {/* profil pics */}
       <div className="flex flex-col items-center justify-center pb-5 group">
         <div className="w-20 h-20 border-2 rounded-full cursor-pointer relative">
           {/* img */}
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-20">
-            {!files && <img src={img} alt="" className="" />}
+            {!file && <img src={img} alt="" className="" />}
           </div>
           <div
             className="absolute top-0 left-0 w-full h-full flex items-center justify-center
@@ -68,11 +106,16 @@ export default function SiginUpForm() {
             />
           </div>
           <div className="overflow-hidden rounded-full w-full h-full">
-            {files && <img src={preview} alt="" className="" />}
+            {file && <img src={preview} alt="" className="" />}
           </div>
         </div>
         <p className="font-medium opacity-70">Profil Pic</p>
       </div>
+      {existError && (
+        <div className="text-center italic font-medium opacity-70">
+          Email Already Exit. Please Logged in
+        </div>
+      )}
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* names */}
         <div className="flex flex-col space-y-3">

@@ -18,6 +18,8 @@ const {
 } = require("../controller/purchase_controller");
 const {
   signup,
+  checkEmail,
+  uploadImage,
   login,
   resetPassword,
   getUserByToken,
@@ -38,7 +40,7 @@ router.get("/accessories/:slug", getAccessoriesBySlug);
 router.get("/purchase/:email", getAllPurchase);
 router.post("/purchase", checkingProcductId, updateHistory, postPurchase);
 // auth
-router.post("/signup", signup);
+router.post("/signup",checkEmail,uploadImage, signup);
 router.post("/login", login);
 router.post("/resetPassword", resetPassword);
 router.get("/user", getUserByToken);

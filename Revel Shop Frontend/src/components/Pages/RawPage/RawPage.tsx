@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Add_To_Cart from "../../resusableCom/Add_To_Cart/Add_To_Cart";
 import NavbarDesktop from "../../resusableCom/Navbar/NavbarDesktop";
 import NavbarMobile from "../../resusableCom/Navbar/NavbarMobile";
 import FooterSection from "../../resusableCom/Footer/FooterSection";
 import RawPageHeader from "./RawPageHeader";
 import ContactusForm from "./ContactusForm";
+import useCounter from "../../../useCounter";
 
 export default function RawPage() {
   const [show, setShow] = useState(false);
+  const { setNavNum } = useCounter();
+  useEffect(() => {
+    setNavNum(8);
+  }, []);
   return (
     <>
       <Add_To_Cart setShow={() => setShow(!show)} show={!show} />

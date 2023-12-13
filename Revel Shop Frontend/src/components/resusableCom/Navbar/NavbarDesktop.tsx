@@ -3,6 +3,7 @@ import img from "../../../assets/blackLogo.png";
 import useCounter from "../../../useCounter";
 import { MdChevronLeft } from "react-icons/md";
 import { useState, useEffect } from "react";
+import NavLoged from "./NavLoged";
 interface Props {
   setShow: () => void;
 }
@@ -37,7 +38,7 @@ export default function NavbarDesktop({ setShow }: Props) {
           key={renderKey}
         >
           {/* Logo */}
-          <img src={img} alt="" className="w-56" />
+          <img src={img} alt="" className="lg:w-56 md:w-40" />
           <div className="flex items-center justify-center space-x-6">
             {/* home */}
             <Link to={"/"} key={0}>
@@ -85,28 +86,47 @@ export default function NavbarDesktop({ setShow }: Props) {
                 ))}
               </div>
             </div>
-            {/* authentication Buttons */}
-            <Link to={"/signin"} key={nav.length + 1}>
-              <p
-                onClick={() => setNavNum(6)}
+            {/* contact */}
+            <Link to={"/contact_us"}>
+              <div
+                onClick={() => setNavNum(8)}
                 className={
-                  "text-lg font-medium " + (6 === navNum && " opacity-30 ")
-                }
-              >
-                Sign in
-              </p>
-            </Link>
-            <Link to={"/signup"} key={nav.length + 2}>
-              <button
-                onClick={() => setNavNum(7)}
-                className={
-                  "text-lg font-medium border px-4 py-2 duration-300 bg-black text-white opacity-80 hover:opacity-100 " +
+                  "text-lg font-medium flex items-center justify-center" +
                   (8 === navNum && " opacity-30 ")
                 }
               >
-                Sign up
-              </button>
+                Contact
+              </div>
             </Link>
+            {/* authentication Buttons */}
+            {!localStorage.getItem("token") && (
+              <Link to={"/signin"} key={nav.length + 1}>
+                <p
+                  onClick={() => setNavNum(6)}
+                  className={
+                    "text-lg font-medium " + (6 === navNum && " opacity-30 ")
+                  }
+                >
+                  Sign in
+                </p>
+              </Link>
+            )}
+            {!localStorage.getItem("token") && (
+              <Link to={"/signup"} key={nav.length + 2}>
+                <button
+                  onClick={() => setNavNum(7)}
+                  className={
+                    "text-lg font-medium border px-4 py-2 duration-300 bg-black text-white opacity-80 hover:opacity-100 " +
+                    (8 === navNum && " opacity-30 ")
+                  }
+                >
+                  Sign up
+                </button>
+              </Link>
+            )}
+            {/* logged person */}
+            {localStorage.getItem("token") && <NavLoged />}
+            {/* cart */}
             <button
               onClick={setShow}
               className={

@@ -33,6 +33,7 @@ export default function SiginUpForm() {
     if (data.password !== data.passwordConfrom) return setShowError(true);
     setShowError(false);
     console.log(data);
+    console.log(rememCheck);
     if (files) console.log(files);
     reset();
     setFiles(null);
@@ -152,6 +153,8 @@ export default function SiginUpForm() {
               name=""
               id=""
               className="w-4 h-4 cursor-pointer"
+              checked={rememCheck}
+              onClick={() => setRememCheck(!rememCheck)}
             />
             <p className="font-medium">Remember me</p>
           </div>

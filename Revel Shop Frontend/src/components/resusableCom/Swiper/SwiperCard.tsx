@@ -52,7 +52,9 @@ export default function SwiperCard({
         <button
           className="border border-spacing-x-1.5 border-black p-3 group hover:bg-black duration-300"
           ref={navLeft}
-          onClick={() => swiperRef.current.swiper.slidePrev()}
+          onClick={() => {
+            swiperRef.current.swiper.slidePrev();
+          }}
         >
           <svg
             className="fill-black group-hover:fill-white duration-300"
@@ -92,7 +94,9 @@ export default function SwiperCard({
           {data?.map((el) => (
             <SwiperSlide key={el._id}>
               <Link to={`/${For}/${el.slug}`}>
-                <div className="flex flex-col items-start space-y-4 duration-300 group overflow-hidden">
+                <div
+                  className={`flex flex-col items-start space-y-4 duration-300 group overflow-hidden`}
+                >
                   <div className="w-full overflow-hidden">
                     <img
                       src={el.image[0]}

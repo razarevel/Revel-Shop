@@ -12,9 +12,8 @@ const {
 } = require("../controller/basic_controller");
 const {
   postPurchase,
+  checkHistory,
   getAllPurchase,
-  checkingProcductId,
-  updateHistory,
 } = require("../controller/purchase_controller");
 const {
   signup,
@@ -38,9 +37,9 @@ router.get("/accessories", getAllAccessories);
 router.get("/accessories/:slug", getAccessoriesBySlug);
 // purchase
 router.get("/purchase/:email", getAllPurchase);
-router.post("/purchase", checkingProcductId, updateHistory, postPurchase);
+router.post("/purchase", checkHistory, postPurchase);
 // auth
-router.post("/signup",checkEmail,uploadImage, signup);
+router.post("/signup", checkEmail, uploadImage, signup);
 router.post("/login", login);
 router.post("/resetPassword", resetPassword);
 router.get("/user", getUserByToken);

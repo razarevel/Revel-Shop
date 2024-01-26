@@ -106,3 +106,13 @@ input[type="checkbox"] {
   height: 318px;
   transition: height 0.3s linear;
 }
+
+.country .hideCountries {
+  height: 0px;
+  transition: height 0.2s linear;
+}
+.country .showCountries {
+  height: 24rem;
+  transition: height 0.2s linear;
+}
+

@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 interface Props {
-  handleCart: (num:number) => void;
+  handleCart: (num: number) => void;
+  For: string;
+  slug: any;
 }
-export default function ProductDetailButtons({ handleCart }: Props) {
+export default function ProductDetailButtons({ handleCart, For, slug }: Props) {
   const [num, setNum] = useState(1);
   return (
     <div
@@ -47,19 +50,21 @@ export default function ProductDetailButtons({ handleCart }: Props) {
             (!(num === 0) && " hover:bg-black hover:text-white duration-300")
           }
           disabled={num === 0}
-          onClick={()=>handleCart(num)}
+          onClick={() => handleCart(num)}
         >
           Add To Cart
         </button>
-        <button
-          className={
-            "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 " +
-            (!(num === 0) && " hover:opacity-100")
-          }
-          disabled={num === 0}
-        >
-          Buy now
-        </button>
+        <Link to={`/${For}/${slug}/buy`}>
+          <button
+            className={
+              "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 " +
+              (!(num === 0) && " hover:opacity-100")
+            }
+            disabled={num === 0}
+          >
+            Buy now
+          </button>
+        </Link>
       </div>
     </div>
   );

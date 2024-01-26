@@ -145,15 +145,17 @@ export default function Add_To_CartCard({
             >
               Update Cart
             </button>
-            <button
-              className={
-                "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 " +
-                (!(num === 0) && " hover:opacity-100")
-              }
-              disabled={num === 0}
-            >
-              Buy now
-            </button>
+            <Link to={`/${For}/${slug}/buy`}>
+              <button
+                className={
+                  "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 " +
+                  (!(num === 0) && " hover:opacity-100")
+                }
+                disabled={num === 0}
+              >
+                Buy now
+              </button>
+            </Link>
             <button
               className={
                 "px-4 py-2 bg-black text-white duration-300 font-medium opacity-80 hover:opacity-100 "

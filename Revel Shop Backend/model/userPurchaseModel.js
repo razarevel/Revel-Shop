@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const purchase = new mongoose.Schema({
-  product_id: {
+  product_slug: {
     type: String,
     required: [true, "Product id is required"],
   },
@@ -19,9 +19,13 @@ const userPurchaseSchema = new mongoose.Schema({
     type: String,
     required: [true, "An email is required"],
   },
-  name: {
+  country: {
     type: String,
-    required: [true, "Name is required"],
+    required: [true, "Country is required"],
+  },
+  town: {
+    type: String,
+    required: [true, "Town name is required"],
   },
   address: {
     type: String,

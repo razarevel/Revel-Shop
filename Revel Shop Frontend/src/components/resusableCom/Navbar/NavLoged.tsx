@@ -21,7 +21,7 @@ export default function NavLoged() {
       .catch((err: any) => {
         if (err.response && err.response.status === 401) {
           // Unauthorized error (invalid token)
-          localStorage.removeItem("token");
+          // localStorage.removeItem("token");
           console.log("Invalid token. Token removed.");
         } else {
           // Other errors
@@ -37,9 +37,9 @@ export default function NavLoged() {
     }
   }, [data]);
   const personContext = [
-    { context: data?.name || "Profil", link: "/" },
-    { context: "All Carts", link: "/" },
-    { context: "Purchases", link: "/" },
+    { context: data?.name || "Profil", link: "/profil" },
+    { context: "All Carts", link: "/add_to_cart" },
+    { context: "Purchases", link: "/purchases" },
   ];
   return (
     <div className="relative product group">

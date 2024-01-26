@@ -125,11 +125,37 @@ export default function NavbarMobile({ setShowCart }: Props) {
             </Link>
           ))}
           {/* authentication button */}
-          <div className="flex items-center justify-center w-full">
+          {!localStorage.getItem("token") ? (
+            <div className="flex items-center justify-center w-full">
+              <Link
+                to={"/signin"}
+                key={nav.length + 1}
+                className="w-full  text-center"
+              >
+                <div
+                  className={
+                    "text-lg font-medium py-3" +
+                    (nav.length + 1 === navNum && " opacity-30 ")
+                  }
+                >
+                  <p>Sign in</p>
+                </div>
+              </Link>
+              <Link
+                to={"/signup"}
+                key={nav.length + 1}
+                className="w-full  text-center"
+              >
+                <div className={"text-lg font-medium py-3 bg-black text-white"}>
+                  Sign up
+                </div>
+              </Link>
+            </div>
+          ) : (
             <Link
-              to={"/signin"}
+              to={"/profil"}
               key={nav.length + 1}
-              className="w-full  text-center"
+              className="w-full  text-center py-2 bg-black text-white"
             >
               <div
                 className={
@@ -137,19 +163,10 @@ export default function NavbarMobile({ setShowCart }: Props) {
                   (nav.length + 1 === navNum && " opacity-30 ")
                 }
               >
-                <p>Sign in</p>
+                <p>My Account</p>
               </div>
             </Link>
-            <Link
-              to={"/signup"}
-              key={nav.length + 1}
-              className="w-full  text-center"
-            >
-              <div className={"text-lg font-medium py-3 bg-black text-white"}>
-                Sign up
-              </div>
-            </Link>
-          </div>
+          )}
         </div>
       </div>
     </div>

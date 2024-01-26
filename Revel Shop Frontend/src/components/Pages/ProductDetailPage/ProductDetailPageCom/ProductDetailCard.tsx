@@ -88,7 +88,11 @@ export default function ProductDetailCard({ For, slug }: Props) {
               natus.
             </p>
           </div>
-          <ProductDetailButtons handleCart={handleAddToCart} />
+          <ProductDetailButtons
+            handleCart={handleAddToCart}
+            For={For}
+            slug={data?.slug}
+          />
         </div>
       </div>
     </div>

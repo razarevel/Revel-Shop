@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
-import { useForm, FieldValues, useController } from "react-hook-form";
+import { useForm, FieldValues } from "react-hook-form";
 import { z } from "zod";
 import img from "./signupPNG.png";
 import { Link, Navigate } from "react-router-dom";
@@ -15,7 +15,6 @@ export default function SiginInForm() {
     register,
     handleSubmit,
     formState: { isValid },
-    reset,
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });

@@ -16,6 +16,7 @@ export default function Add_To_Cart({ setShow, show }: Props) {
   return (
     <div className="cart" key={renderkey}>
       <div
+        onClick={setShow}
         className={
           "fixed w-full min-h-full bg-black z-30 right-0 opacity-80 " +
           (show && "hidden")

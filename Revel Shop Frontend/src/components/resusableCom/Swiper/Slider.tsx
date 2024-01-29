@@ -20,7 +20,7 @@ export default function SliderSection({ For, limit }: Props) {
 
   const FetchData = () =>
     axios
-      .get(`http://127.0.0.1:3000/api/${For}/?limit=${limit}`)
+      .get(`http://revel-shop.eu-west-2.elasticbeanstalk.com/api/${For}/?limit=${limit}`)
       .then((res) => {
         if (For === "men") return res.data.data.men;
         else if (For === "women") return res.data.data.women;

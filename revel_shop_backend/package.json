@@ -21,8 +21,6 @@
   },
   "name": "revel-shop-backend",
   "version": "1.0.0",
-  "main": "app.js",
-  "engines":{
-    "node":"14.x"
-  }
+  "main": "app.js"
+ 
 }

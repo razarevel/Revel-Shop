@@ -17,13 +17,13 @@ export default function PurchasePageGrid() {
       .then((res) => setData(res.data.data.user))
       .catch((err) => console.log(err));
   }, []);
-  return (
+  return ( 
     <>
       <div className="container mx-auto max-w-7xl px-4 py-32 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* profil */}
         <Profil image={data?.image} name={data?.name} email={data?.email} />
         {/* purchases */}
-        <Purchases email={data?.email} />
+        <Purchases  />
       </div>
     </>
   );

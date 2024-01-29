@@ -19,7 +19,7 @@ interface Props {
 }
 export default function SliderSection({ For, limit }: Props) {
   const [data, setData] = useState([]);
-
+  
   
     useEffect(() => {
       axios

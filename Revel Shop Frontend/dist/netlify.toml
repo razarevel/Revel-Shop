@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "http://your-site-url/:splat"
+  to = "http://revel-shop/:splat"
   status = 200
   force = true

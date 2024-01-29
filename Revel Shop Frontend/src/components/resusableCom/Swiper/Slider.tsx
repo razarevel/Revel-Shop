@@ -1,7 +1,9 @@
 import SwiperCard from "./SwiperCard";
 
 import axios from "axios";
-import { useQuery } from "@tanstack/react-query";
+
+import { useEffect, useState } from "react";
+import { date } from "zod";
 
 // interface Data {
 //   _id: any;
@@ -16,21 +18,22 @@ interface Props {
   limit?: number;
 }
 export default function SliderSection({ For, limit }: Props) {
-  // const [data, setData] = useState<Data[]>([]);
+  const [data, setData] = useState([]);
 
-  const FetchData = () =>
-    axios
-      .get(`http://revel-shop.eu-west-2.elasticbeanstalk.com/api/${For}/?limit=${limit}`)
-      .then((res) => {
-        if (For === "men") return res.data.data.men;
-        else if (For === "women") return res.data.data.women;
-        else if (For === "kids") return res.data.data.kids;
-        else if (For === "accessories") return res.data.data.accessories;
-      });
-  const { data } = useQuery({
-    queryKey: [For],
-    queryFn: FetchData,
-  });
+  
+    useEffect(() => {
+      axios
+        .get(
+          `http://revel-shop.eu-west-2.elasticbeanstalk.com/api/${For}/?limit=${limit}`
+        )
+        .then((res) => {
+          if (For === "men") return setData(res.data.data.men);
+          else if (For === "women") return setData(res.data.data.women);
+          else if (For === "kids") return setData(res.data.data.kids);
+          else if (For === "accessories") return setData(res.data.data.accessories);
+        });
+    }, [date]);
+
   const header = [
     {
       heading: "Men's latest",

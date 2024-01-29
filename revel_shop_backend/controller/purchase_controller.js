@@ -1,12 +1,5 @@
 const Purchase = require("../model/purchaseModel");
-const UserPurchases = require("../model/userPurchaseModel");
-const Men = require("../model/menModels");
-const Women = require("../model/womenModel");
-const Kids = require("../model/KidsModel");
-const Accessories = require("../model/accessories");
-const sendReq = (section, req) => {
-  return (req.body.section = section);
-};
+
 exports.checkHistory = async (req, res, next) => {
   const purchase = await Purchase.findOne({ email: req.body.email });
   if (purchase) {

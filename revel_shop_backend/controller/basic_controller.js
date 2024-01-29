@@ -1,6 +1,6 @@
 const Men = require("../model/menModels");
 const Women = require("../model/womenModel");
-const Kids = require("../model/KidsModel");
+const Kids = require("../model/kidsModel.js");
 const Accessories = require("../model/accessories");
 // men
 exports.getAllMen = async (req, res) => {

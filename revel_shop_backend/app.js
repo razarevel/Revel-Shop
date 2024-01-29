@@ -25,7 +25,14 @@ s3 = new AWS.S3({
 });
 
 // route
+app.all("/", (req, res) => {
+  return res.status(200).json({
+    status: "Failed",
+    message: "Please Check the URL",
+  });
+});
 app.use("/api", router);
+
 // connection to mongoose
 const DB = process.env.DATABASE.replace(
   "<password>",

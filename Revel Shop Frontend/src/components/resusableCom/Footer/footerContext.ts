@@ -11,7 +11,7 @@ const footerContext = [
   {
     heading: "Useful Links",
     sections: [
-      { text: "Home Page", link: "/faq" },
+      { text: "Home Page", link: "/" },
       { text: "Products", link: "/all-products" },
       { text: "Help", link: "/help" },
       { text: "Contact Us", link: "/contact_Us" },

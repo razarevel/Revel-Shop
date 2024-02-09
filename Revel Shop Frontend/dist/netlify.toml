@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "http://revel-shop/:splat"
-  status = 200
-  force = true

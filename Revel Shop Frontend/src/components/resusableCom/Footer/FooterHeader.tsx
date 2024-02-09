@@ -14,7 +14,7 @@ export default function FooterHeader() {
             <p>
               <a href="mailto:razarevel@gmail.com">razarevel@gmail.com</a>
             </p>
-            <p>03071887522</p>
+            <p>03285467479</p>
           </div>
         </div>
         {footerContext.map((el, index) => (

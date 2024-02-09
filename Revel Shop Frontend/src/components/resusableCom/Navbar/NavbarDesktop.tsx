@@ -31,14 +31,16 @@ export default function NavbarDesktop({ setShow }: Props) {
     },
   ];
   return (
-    <>
+    <nav id="nav">
       <div className="hidden md:block">
         <div
           className="container mx-auto max-w-7xl flex items-center justify-between px-4 py-7"
           key={renderKey}
         >
           {/* Logo */}
-          <img src={img} alt="" className="lg:w-56 md:w-40" />
+          <Link to="/">
+            <img src={img} alt="" className="lg:w-56 md:w-40 cursor-pointer" />
+          </Link>
           <div className="flex items-center justify-center space-x-6">
             {/* home */}
             <Link to={"/"} key={0}>
@@ -167,6 +169,6 @@ export default function NavbarDesktop({ setShow }: Props) {
         {/* border After Nav */}
         <div className="border-t-[3px] border-dotted"></div>
       </div>
-    </>
+    </nav>
   );
 }

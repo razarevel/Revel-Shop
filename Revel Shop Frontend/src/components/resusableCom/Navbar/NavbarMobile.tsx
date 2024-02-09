@@ -31,7 +31,7 @@ export default function NavbarMobile({ setShowCart }: Props) {
     },
   ];
   return (
-    <div className="mobileNav">
+    <div className="mobileNav" id="nav">
       <div className="relative">
         {/* Nav */}
         <div className="flex items-center justify-between md:hidden px-4 py-5 sm:px-10 relative z-30 bg-white">

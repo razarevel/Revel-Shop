@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img from "../../../assets/whiteLogo.png";
 import footerContext from "./footerContext";
 export default function FooterHeader() {
@@ -5,7 +6,9 @@ export default function FooterHeader() {
     <>
       <div className="text-center space-y-12 md:text-left md:space-y-0 md:grid md:grid-cols-2 md:gap-10 md:px-10 lg:grid-cols-4 lg:px-4">
         <div className="space-y-5 flex flex-col items-center justify-center w-full md:items-start md:justify-start">
-          <img src={img} alt="" className="w-56 " />
+          <Link to="/">
+            <img src={img} alt="" className="w-56 cursor-pointer" />
+          </Link>
           {/* first */}
           <div className="space-y-2 opacity-80">
             <p className="md:w-60">
@@ -26,7 +29,7 @@ export default function FooterHeader() {
                   className="text-sm opacity-60 duration-300 hover:opacity-100 hover:translate-x-2"
                   key={index}
                 >
-                  <a href={el.link}>{el.text}</a>
+                  <Link to={el.link}>{el.text}</Link>
                 </p>
               ))}
             </div>

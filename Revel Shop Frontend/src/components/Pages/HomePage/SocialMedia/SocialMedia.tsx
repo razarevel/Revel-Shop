@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import img3 from "./img3.jpg";
@@ -22,7 +21,7 @@ export default function SocialMedia() {
         {/* grid */}
         <div className="grid grid-cols-2 md:grid-cols-6 gap-0">
           {images.map((el, index) => (
-            <Link to={"https://www.instagram.com/otakuraza/"}>
+            <a href={"https://www.instagram.com/otakuraza/"} target="_blank">
               <div className="relative group">
                 <div className="absolute w-full h-full top-0 left-0 duration-500 group-hover:bg-black opacity-80"></div>
                 {/* insta */}
@@ -32,7 +31,7 @@ export default function SocialMedia() {
                 </div>
                 <img src={el} alt="" key={index} />
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

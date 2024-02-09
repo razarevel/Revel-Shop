@@ -70,7 +70,11 @@ export default function FooterBody() {
         <p>Copyright © 2023 Revel Shop Ca, Ltd. All Rights Are Reserved</p>
         <p>
           Developer:{" "}
-          <a href={svgs[2].link} className="text-sky-600 hover:underline">
+          <a
+            href={svgs[2].link}
+            className="text-sky-600 hover:underline"
+            target="_blank"
+          >
             Revel Raza
           </a>
         </p>
